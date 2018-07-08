@@ -2,87 +2,325 @@
 <html lang="pt-BR">  <!-- LINGUAGEM -->
 
 <!-- INÍCIO CABEÇALHO -->
- <head>   
- 	<!-- Lista de caracteres que vão ser utilizados --> 
-    <meta charset="utf-8"> 
+<head>   
+   <!-- Lista de caracteres que vão ser utilizados --> 
+   <meta charset="utf-8"> 
 
-    <!-- Adaptação do site para qualquer dispositivo -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+   <!-- Adaptação do site para qualquer dispositivo -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <!-- Ícone e título da aba no navegador -->
-    <link rel="icon" href="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\icone_da_aba.png">
-    <title>Currículo</title>
+   <!-- Ícone e título da aba no navegador -->
+   <link rel="icon" href="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\icone_da_aba.png">
+   <title>Currículo</title>
 
-    <!-- Imagem de pessoas jogando xadrez, pensando em usar -->
-    <style type="text/css">
-   				    #xadrez {
-    						background: url(https://images.unsplash.com/photo-1506652675935-66f79eb95f4a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9bcaa358c6b015d923a7d23a148a7b1f&auto=format&fit=crop&w=1950&q=80);
-    						background-repeat: no-repeat;
-    						background-size: auto;
-    						border-spacing: 10px;
-					    	}
-					#circulos { 
-					 		-webkit-border-radius: 50px;
-    						    -moz-border-radius: 50px;
-       						   border-radius: 50px;
-       						}
-       				#primeirotitulo {
-       				 		font-size: 50px;
-       				 		background-color: #C48DD2;
-       				 		}
-	</style>
+   <!-- Imagem de pessoas jogando xadrez, pensando em usar -->
+   <style type="text/css">
+   #xadrez {
+      background: url(https://images.unsplash.com/photo-1506652675935-66f79eb95f4a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9bcaa358c6b015d923a7d23a148a7b1f&auto=format&fit=crop&w=1950&q=80);
+      background-repeat: no-repeat;
+      background-size: auto;
+      border-spacing: 10px;
+   };
+   #circulos { 
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+   };
+   #primeirotitulo {
+      font-size: 50px;
+      background-color: #C48DD2;
+   };
+   #fundo {
+      background: url(https://images.unsplash.com/photo-1504660069764-2b37e279874a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7945a4d590c31ea4887f50ab42dd6d17&auto=format&fit=crop&w=1950&q=80);
+      opacity: 0.2;
+   }
+
+</style>
 </head>
 <!-- FIM CABEÇALHO -->
 
 
 
 <!-- INÍCIO CORPO -->
-  <body>
+<body>
+
+   <!-- Ínício do corpo com título e imagens -->
+   <div class="container">
+      <div class="py-5 text-center">
+         <!-- Título -->
+         <h2 style="font-size: 50px;">
+            crie o seu currículo <br> com a sua cara
+         </h2>
+         <br> <!-- Espaço -->
+         <!-- Rostos de pessoas -->
+         <nav class="nav nav-masthead justify-content-center row-fluid";>
+            <img class="d-block mx-auto mb-1" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\homem_branco.png" alt="" width="40" height="40">
+            <img class="d-block mx-auto mb-4" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\homem_idoso.png" alt="" width="40" height="40">
+            <img class="d-block mx-auto mb-4" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\homem_moreno_oculos.png" alt="" width="40" height="40">
+            <img class="d-block mx-auto mb-4" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\mulher_branca.png" alt="" width="40" height="40">
+            <img class="d-block mx-auto mb-4" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\mulher_morena.png" alt="" width="40" height="40">
+            <img class="d-block mx-auto mb-4" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\gravata.png" alt="" width="45" height="45">
+         </nav>   
+
+                  <!-- Ainda não sei se uso essa imagem
+                      <img class="d-block mx-auto mb-4" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\documento.png" alt="" width="60" height="60"> 
+                   -->   
+                   <!-- Fim do corpo com título e imagens -->
 
 
-  	<!-- Ínício do corpo com título e imagens -->
-  			<div class="container">
- 			 <div class="py-5 text-center">
- 			 	<!-- Título -->
- 			 	<h2 style="font-size: 50px;">
- 			    crie o seu currículo <br> com a sua cara
- 			 	</h2>
- 			 	<br> <!-- Espaço -->
- 			 	<!-- Rostos de pessoas -->
-        			<nav class="nav nav-masthead justify-content-center row-fluid";>
-       				    <img class="d-block mx-auto mb-1" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\homem_branco.png" alt="" width="40" height="40">
-       				    <img class="d-block mx-auto mb-4" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\homem_idoso.png" alt="" width="40" height="40">
-     					<img class="d-block mx-auto mb-4" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\homem_moreno_oculos.png" alt="" width="40" height="40">
-    					<img class="d-block mx-auto mb-4" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\mulher_branca.png" alt="" width="40" height="40">
-       					<img class="d-block mx-auto mb-4" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\mulher_morena.png" alt="" width="40" height="40">
-                        <img class="d-block mx-auto mb-4" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\gravata.png" alt="" width="45" height="45">
-    				</nav>	
+                   <!-- Prólogo do corpo descrição e chamativo para o usuário -->
+                   <!-- Conversa com o usuário -->
+                   <p  class="lead text-center">
+                     o mercado atual exige um profissional com experiência, dedicação e formação em diversas áreas <br>
+                     para que isso seja apresentado ao contratante, é necessário um currículo que represente quem você é <br>
+                     para isso, este site foi idealizado utilizando a simplicidade e a facilidade para criar um documento tão importante <br>   
+                  </p>
+               </div>
+            </div>
+            <nav class="nav nav-masthead justify-content-center row-fluid";>
+              <!-- Início do preenchimento dos dados do currículo -->
 
-    					<!-- Ainda não sei se uso essa imagem
-   				    	 <img class="d-block mx-auto mb-4" src="C:\Users\felip\Desktop\currículos\Curriculos\bootstrap\img\documento.png" alt="" width="60" height="60"> 
-						-->	
-	<!-- Fim do corpo com título e imagens -->
+              <div class="container py-5 text-center align-items-center">
+               <div class="col-md-8 order-md-1">
+                  <h4 class="mb-3">Curriculum Vitae</h4>
+                  <form class="needs-validation" novalidate>
+
+                     <!-- NOME E SOBRENOME -->           
+                     <div class="row">
+                        <div class="col-md-6 mb-2">
+                           <label for="primeiroNome">Nome</label>
+                           <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required>
+                           <div class="invalid-feedback">
+                              É obrigatório inserir um nome válido.
+                           </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                           <label for="sobrenome">Sobrenome</label>
+                           <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
+                           <div class="invalid-feedback">
+                              É obrigatório inserir um sobrenome válido.
+                           </div>
+                        </div>
+                     </div>
+                     <!-- NOME SOBRENOME -->
+
+                     <!-- EMAIL -->
+                     <div class="mb-3">
+                        <label for="nickname">Email</label>
+                        <div class="input-group">
+                           <div class="input-group-prepend">
+                              <span class="input-group-text">@</span>
+                           </div>
+                           <input type="text" class="form-control" id="email" placeholder="meuemail@aquelelá.com" required>
+                           <div class="invalid-feedback" style="width: 100%;">
+                              Seu email é obrigatório, ele transparece um ar profissional. 
+                           </div>
+                        </div>
+                     </div>
+                     <!-- EMAIL -->
+
+                     <!-- TELEFONE E SEXO -->
+                     <div class="row"> 
+                        <div class="col-md-6 mb-3">
+                           <label for="cc-numero">Telefone</label>
+                           <div class="input-group">
+                              <div class="input-group-prepend"> </div>
+                              <input type="text" class="form-control" id="cc-numero" placeholder="(46) 99943-2232" required>
+                              <div class="invalid-feedback" style="width: 100%;">
+                                 É claro que o número é obrigatório, <br>como irão te avisar que está contratado?
+                              </div>
+                           </div>
+                        </div>
+                        <!-- TELEFONE -->
+
+                        <!-- SEXO -->
+                        <div class="col-md-6 mb-3">
+                           <label for="SEXO">Sexo</label>
+                           <select class="custom-select d-block w-100" id="SEXO" required>
+                              <option value="">
+                              Escolha...</option>
+                              <option>Masculino</option>
+                              <option>Feminino</option>
+                           </select>
+                           <div class="invalid-feedback">
+                              Por favor, escolha o seu sexo.
+                           </div>
+                        </div>
+                     </div>
+                     <!-- TELEFONE E SEXO -->
+
+                     <!-- ESTADO -->
+                     <div class="row"> 
+                        <div class="col-md-4 mb-3">
+                           <label for="estado">Estado</label>
+                           <select class="custom-select d-block w-100" id="estado" required>
+                              <option value="">
+                              Escolha...</option>
+                              <option>Acre</option>
+                              <option>Alagoas</option>
+                              <option>Amapá</option>
+                              <option>Amazonas</option>
+                              <option>Bahia</option>
+                              <option>Ceará</option>
+                              <option>Distrito Federal</option>
+                              <option>Espírito Santo</option>
+                              <option>Goiás</option>
+                              <option>Maranhão</option>
+                              <option>Mato Grosso do Sul</option>
+                              <option>Minas Gerais</option>
+                              <option>Pará</option>
+                              <option>Paraíba</option>
+                              <option>Paraná</option>
+                              <option>Pernambuco</option>
+                              <option>Piauí</option>
+                              <option>Rio de Janeiro</option>
+                              <option>Rio Grande do Norte</option>
+                              <option>Rio Grande do Sul</option>
+                              <option>Rondônia</option>
+                              <option>Roraima</option>
+                              <option>Santa Catarina</option>
+                              <option>São Paulo</option>
+                              <option>Sergipe</option>
+                              <option>Tocantins</option>
+                           </select>
+                           <div class="invalid-feedback">
+                              Por favor, insira um estado válido.
+                           </div>
+                        </div>
+                        <!-- ESTADO -->
+
+                        <!-- CIDADE -->
+                        <div class="col-md-5 mb-3">
+                           <label for="endereco">Cidade</label>
+                           <input type="text" class="form-control" id="endereco" placeholder="Francisco Beltrão" required>
+                           <div class="invalid-feedback">
+                              Por favor, insira a cidade onde você reside.
+                           </div>
+                        </div>
+                        <!-- CIDADE -->
+
+                        <!-- CEP -->
+                        <div class="col-md-3 mb-3">
+                           <label for="cep">CEP</label>
+                           <input type="text" class="form-control" id="cep" placeholder="" required>
+                           <div class="invalid-feedback">
+                              É obrigatório inserir um CEP.
+                           </div>
+                        </div>
+                        <!-- CEP -->
+
+                        <!-- ENDEREÇO -->
+                        <div class="col-md-12 mb-3">
+                           <label for="endereco">Endereço</label>
+                           <input type="text" class="form-control" id="endereco" placeholder="Rua dos bobos, nº 0" required>
+                           <div class="invalid-feedback">
+                              Por favor, insira seu endereço de entrega.
+                           </div>
+                        </div>
+                        <!-- ENDEREÇO -->
+
+                        <!-- FORMAÇÃO -->
+                        <div class="row"> 
+                           <div class="col-md-12 mb-3">
+                              <label for="estado">Formação</label>
+                              <select class="custom-select d-block w-100" id="select" required>
+                                 <option value="">
+                                 Escolha...</option>
+
+                                 <option>Ensino médio incompleto</option>
+                                 <option>Ensino médio completo</option>
+                                 <option>Terceiro grau incompleto</option>
+                                 <option>Terceiro grau completo</option>
+                                 <option>Pós-graduação incompleta</option>
+                                 <option>Pós-graduação completa</option>
+                                 <option>Distrito Federal</option>
+                                 <option>Espírito Santo</option>
+                                 <option>Goiás</option>
+                                 <option>Maranhão</option>
+                                 <option>Mato Grosso do Sul</option>
+                                 <option>Minas Gerais</option>
+                                 <option>Pará</option>
+                                 <option>Paraíba</option>
+                                 <option>Paraná</option>
+                                 <option>Pernambuco</option>
+                                 <option>Piauí</option>
+                                 <option>Rio de Janeiro</option>
+                                 <option>Rio Grande do Norte</option>
+                                 <option>Rio Grande do Sul</option>
+                                 <option>Rondônia</option>
+                                 <option>Roraima</option>
+                                 <option>Santa Catarina</option>
+                                 <option>São Paulo</option>
+                                 <option>Sergipe</option>
+                                 <option>Tocantins</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                 Por favor, insira um estado válido.
+                              </div>
+                           </div>
+                           <!-- ESTADO -->
+
+                           <!-- ENDEREÇO -->
+                           <div class="col-md-12 mb-5">
+                              <label for="endereco">Qualificações</label>
+                              <input type="text" class="form-control" id="input-group-text" placeholder="Eu sou divertido e legal" required>
+                              <div class="invalid-feedback">
+                                 Por favor, insira seu endereço de entrega.
+                              </div>
+                           </div>
+                           <!-- ENDEREÇO -->
+                          
 
 
-	<!-- Prólogo do corpo descrição e chamativo para o usuário -->
-  			<!-- Conversa com o usuário -->
-       		 <p class="lead text-center">
-       		 	o mercado atual exige um profissional com experiência, dedicação e formação em diversas áreas <br>
-        		para que isso seja apresentado ao contratante, é necessário um currículo que represente quem você é <br>
-        		para isso, este site foi idealizado utilizando a simplicidade e a facilidade para criar um documento tão importante <br> 	
-      	     </p>
-      	 </div>
-      	 </div>
-          
 
-     
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+
+                           <button class="btn btn-primary btn-lg btn-block" type="submit">finalizar o meu currículo</button>
+                        </form>
+                     </div>
+
+                  </nav>
+               </form>
+
+
+               <!-- Fim do preenchimento dos dados do currículo -->
+
+
+
+
+               <!-- Optional JavaScript -->
+               <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+               <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+               <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+               <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+               <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+               <script src="../../../../assets/js/vendor/popper.min.js"></script>
+               <script src="../../../../dist/js/bootstrap.min.js"></script>
+               <script src="../../../../assets/js/vendor/holder.min.js"></script>
+               <script>
+      // Exemplo de JavaScript para desativar o envio do formulário, se tiver algum campo inválido.
+      (function() {
+         'use strict';
+
+         window.addEventListener('load', function() {
+          // Selecione todos os campos que nós queremos aplicar estilos Bootstrap de validação customizados.
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Faz um loop neles e previne envio
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+               if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+               }
+               form.classList.add('was-validated');
+            }, false);
+         });
+       }, false);
+      })();
+   </script>
+</body>
 </html>
