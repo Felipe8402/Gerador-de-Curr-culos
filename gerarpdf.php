@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 $fnome= utf8_decode($_POST["Nome"]);
 $femail= utf8_decode($_POST["EmailDoUsuario"]);
@@ -26,42 +27,16 @@ $fanoconclusao= utf8_decode($_POST["AnoConclusao"]);
 
 
 
+=======
+ $fnome= utf8_decode($_POST["Nome"]);
+>>>>>>> parent of 5077946... 3.1.3
 require_once("fpdf/fpdf.php");
  
 $pdf= new FPDF("P","pt","A4");
  
-
-
 $pdf->AddPage();
-
-//nome
 $pdf->SetFont('arial','B',12);
-$pdf->Cell(40,20,"Nome:",0,0,'L');
-$pdf->setFont('arial','',12);
-$pdf->Cell(0,20,$fnome,0,1,'L');
-
-//email
-$pdf->SetFont('arial','B',12);
-$pdf->Cell(40,20,"Email:",0,0,'L');
-$pdf->setFont('arial','',12);
-$pdf->Cell(0,20,$femail,0,1,'L');
-
-//telefone
-$pdf->SetFont('arial','B',12);
-$pdf->Cell(55,20,"Telefone:",0,0,'L');
-$pdf->setFont('arial','',12);
-$pdf->Cell(0,20,$ftelefone,0,1,'L');
-
-
-//sexo
-$pdf->SetFont('arial','B',12);
-$pdf->Cell(37,20,"Sexo:",0,0,'L');
-$pdf->setFont('arial','',12);
-$pdf->Cell(0,20,$fsexo,0,1,'L');
-
-/*
-//estadocivil
-$pdf->SetFont('arial','B',12);
+<<<<<<< HEAD
 $pdf->Cell(45,20,"Estado Civil:",0,0,'L');
 $pdf->setFont('arial','',12);
 $pdf->Cell(0,20,"$festadocivil",0,1,'L');
@@ -117,8 +92,11 @@ $pdf->SetFont('arial','B',12);
 $pdf->Cell(37,20,$fconclusao,0,0,'L');
 $pdf->setFont('arial','',12);
 $pdf->Cell(0,20,$anoconclusao,0,1,'L');
-
-*/
-
+=======
+$pdf->Cell(0,5,"$fnome",0,1,'L');
+$pdf->Ln(8);
 $pdf->Output("arquivo.pdf","D");
-?>
+>>>>>>> parent of 5077946... 3.1.3
+
+
+ ?>
