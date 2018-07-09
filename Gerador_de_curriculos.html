@@ -94,179 +94,104 @@
 
 
 
+		<!-- INÍCIO CORPO -->
+		<body style="background-color: rgba(137, 153, 150, 0.1);">    
 
-<body style="background-color: rgba(137, 153, 150, 0.1);">    <!-- INÍCIO CORPO -->
- <!-- style está adicionando uma cor de fundo para o site, a ideia é que seja menos 
- 	agressivo para os olhos, comparando com o branco 							-->
-
-
- 	<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+ 		<!-- style está adicionando uma cor de fundo para o site, a ideia é que seja menos 
+ 		agressivo para os olhos, comparando com o branco 								-->
 
 
- 	<!-- Início do corpo com título, imagens e conversa -->
- 	<div class="container"> 
- 		<!-- Início do corpo com título, imagens e conversa -->
+ <!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+
+ 	<div class="container">  	
  		<div class="py-4 text-center"> 
- 			<!-- PY-4 = espaçamento na vertical anterior -->
- 			<!-- Text-center = texto centralizado -->
+ 				<h2 style="font-size: 50px;">
+ 				crie o seu currículo <br> com a sua cara 
+ 				</h2> <br> 		
+ 					<nav class="nav nav-masthead justify-content-center row-fluid";>
+ 						<img class="d-block mx-auto" src="bootstrap\img\homem_branco.png" alt="" width="40" height="40">
+ 						<img class="d-block mx-auto" src="bootstrap\img\homem_idoso.png" alt="" width="40" height="40">
+ 						<img class="d-block mx-auto" src="bootstrap\img\homem_moreno_oculos.png" alt="" width="40" height="40">
+ 						<img class="d-block mx-auto" src="bootstrap\img\mulher_branca.png" alt="" width="40" height="40">
+ 						<img class="d-block mx-auto" src="bootstrap\img\mulher_morena.png" alt="" width="40" height="40">
+ 						<img class="d-block mx-auto" src="bootstrap\img\gravata.png" alt="" width="45" height="45">
+ 					</nav> <br>
+ 							<p class="lead">
+ 								o mercado atual exige um profissional com experiência, dedicação e formação em diversas áreas <br>	
+ 								para que isso seja apresentado ao contratante, é necessário um currículo que represente quem você é <br><br>
+ 								<h6 style="font-size: 125%">
+ 								- este site foi idealizado utilizando a simplicidade e a facilidade <br>para criar um documento tão importante - </h6> <br>   
+ 							</p>
+ 		</div> 
+ 	</div>
 
+ <!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+<form name="nome" method="post" action="gerarpdf.php" >
+<form class="needs-validation">
 
- 			<!-- Título -->
- 			<h2 style="font-size: 50px;">
- 				crie o seu currículo <br> com a sua cara
- 			</h2>
- 			<!-- Título -->
- 			<br> <!-- Espaço -->
- 			<!-- Rostos de pessoas -->
- 			<nav class="nav nav-masthead justify-content-center row-fluid";>
- 				<img class="d-block mx-auto" src="bootstrap\img\homem_branco.png" alt="" width="40" height="40">
- 				<img class="d-block mx-auto" src="bootstrap\img\homem_idoso.png" alt="" width="40" height="40">
- 				<img class="d-block mx-auto" src="bootstrap\img\homem_moreno_oculos.png" alt="" width="40" height="40">
- 				<img class="d-block mx-auto" src="bootstrap\img\mulher_branca.png" alt="" width="40" height="40">
- 				<img class="d-block mx-auto" src="bootstrap\img\mulher_morena.png" alt="" width="40" height="40">
- 				<img class="d-block mx-auto" src="bootstrap\img\gravata.png" alt="" width="45" height="45">
- 			</nav> 
+	<!-- TÍTULO DADOS PESSOAIS -->
+ 	<div class="py-5 text-center align-items-center">	
+ 	<div class="container">
+ 			<h4>dados pessoais <div class="popup" onclick="myPopup()"> + <span class="popuptext" id="myPopup"> <h5 style="font-size: 50%">
+ 			Os campos abaixo devem ser preenchidos com informações básicas e extremamente necessárias para a criação de um currículo</h5></span> </div>
+			</h4> <hr> 
 
- 			<br> <!-- Espaço -->  
- 			<!-- Rostos de pessoas -->
+	<!-- DADOS PESSOAIS -->		
 
- 			<!-- Conversa com o usuário -->
- 			<p  class="lead"> <!-- Parágrafo -->
- 				o mercado atual exige um profissional com experiência, dedicação e formação em diversas áreas <br>
- 				para que isso seja apresentado ao contratante, é necessário um currículo que represente quem você é <br>
- 				<br>
- 				<h6 style="font-size: 125%">
- 					- este site foi idealizado utilizando a simplicidade e a facilidade <br>para criar um documento tão importante - </h6> <br>   
- 				</p> <!-- Parágrafo -->
+ 	<!-- PRIMEIRA LINHA -->		
+ 			<div class="col-md-14 mb-3">					
+ 			<label for="text-center">Nome completo</label>
+ 			<input name="Nome" type="text" class="form-control" id="firstName" placeholder="" required></div>
 
- 			</div> <!-- Fechamento da class py-4 e text-center -->
+ 	<!-- SEGUNDA LINHA -->			
+ 			<div class="col-md-14 mb-3">
+ 			<label for="nickname">Email</label>
+ 			<div class="input-group">
+ 			<div class="input-group-prepend">
+ 			<span class="input-group-text">@</span></div>		
+ 			<input name="Email" type="text" class="form-control" id="email" placeholder="meuemail@aquelelá.com" required></div></div>
+		
+ 	<!-- INÍCIO TERCEIRA LINHA -->
+ 		<div class="row">
 
- 			<!-- Fim do corpo com título, imagens e conversa -->
- 		</div>
- 		<!-- Fim do corpo com título, imagens e conversa -->
-
-
- 		<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
-
-<<<<<<< HEAD
+ 		<!-- PRIMEIRO BLOCO -->
+ 			<div class="col-md-3 mb-3">
+ 			<label for="cc-numero">Telefone</label>
+ 			<div class="input-group">
+ 			<div class="input-group-prepend">
+ 			<span class="input-group-text">✆</span></div>
+ 			<input name="Telefone" type="text" class="form-control" id="cc-numero" placeholder="(46) 99943-2232" required></div></div>
+ 			
+ 		<!-- SEGUNDO BLOCO -->	
+ 			<div class="col-md-3 mb-3">
+ 			<label for="sexo">Sexo ♂</label>
+ 			<select name="Sexo" class="custom-select d-block w-100" id="sexo" required>
+ 			<option value="">
+ 					Escolha...</option>
+ 			<option>Masculino</option>
+ 			<option>Feminino</option></select></div>
  		
+ 		<!-- TERCEIRO BLOCO -->	
+ 			<div class="col-md-3 mb-3">
+ 			<label for="estado_civil">Estado civil</label>
+ 			<select name="EstadoCivil" class="custom-select d-block w-100" id="estado_civil" required>
+ 			<option value="">
+ 				Escolha...</option>
+ 			<option>Solteiro (a)</option>
+ 			<option>Casado (a)</option>
+ 			<option>União Estável</option>
+ 			<option>Separado (a)</option>
+			<option>Divoriado (a)</option>
+ 			<option>Viúvo (a)</option> </select></div>
 
- 			<form class="needs-validation">
-=======
+ 			<!-- QUARTO BLOCO -->					
+			<div class="col-md-3 mb-3">					
+ 			<label for="text-center">Data de Nascimento</label>
+ 			<input name="Nome" type="text" class="form-control" id="firstName" placeholder="" required></div>
 
->>>>>>> parent of 5166a6a... 3.1.2
-
- 				<!-- Início do preenchimento dos dados do currículo -->
- 				<div class="container py-5 text-center align-items-center">
- 					<!-- Início do preenchimento dos dados do currículo -->
-
- 					<h4>dados pessoais <div class="popup" onclick="myPopup()"> +
- 						<span class="popuptext" id="myPopup"> <h5 style="font-size: 50%"> Os campos abaixo devem ser preenchidos com informações básicas e extremamente necessárias para a criação de um currículo</h5></span>
- 					</div> </h4>
-
-
-
-<<<<<<< HEAD
- 					<hr>
-
- 						<!-- PRIMEIRA LINHA -->
- 						<div class="col-md-14 mb-3">
- 						<form name="nome" method="post" action="gerarpdf.php" >
- 						<label for="text-center">Nome completo</label>
- 						<input type="text" class="form-control" id="firstName" placeholder="" value="" required name="Nome"> 
-=======
- 			<hr>
- 			<form class="needs-validation">
- 				<div class="col-md-14 mb-3">
- 					<!-- PRIMEIRA LINHA -->
- 					<label for="text-center">Nome completo</label>
- 					<input type="text" class="form-control" id="firstName" placeholder="" value="" required>
- 					<div class="invalid-feedback">
- 						Valid first name is required.
- 					</div>  
- 				</div>
-
-
- 				<!-- SEGUNDA LINHA -->				
- 				<div class="col-md-14 mb-3">
- 					<label for="nickname">Email</label>
- 					<div class="input-group">
- 						<div class="input-group-prepend">
- 							<span class="input-group-text">@</span>
- 						</div>
- 						<input type="text" class="form-control" id="email" placeholder="meuemail@aquelelá.com" required>
- 						<div class="invalid-feedback" style="width: 100%;">
- 							Seu email é obrigatório, ele transparece um ar profissional. 
->>>>>>> parent of 5166a6a... 3.1.2
- 						</div>
- 						</form>
-
-
- 					<!-- SEGUNDA LINHA -->				
- 					<div class="col-md-14 mb-3">
- 						<label for="nickname">Email</label>
- 						<div class="input-group">
- 							<div class="input-group-prepend">
- 								<span class="input-group-text">@</span>
- 							</div>
- 							<input type="text" class="form-control" id="email" placeholder="meuemail@aquelelá.com" required name="EmailDoUsuario">
- 							<div class="invalid-feedback" style="width: 100%;">
- 								Seu email é obrigatório, ele transparece um ar profissional. 
- 							</div>
- 						</div>
- 					</div>
- 					<!-- TERCEIRA LINHA -->
- 					<div class="row">
- 						<div class="col-md-3 mb-3">
- 							<label for="cc-numero">Telefone</label>
- 							<div class="input-group">
- 								<div class="input-group-prepend"> </div>
- 								<input type="text" class="form-control" id="cc-numero" placeholder="(46) 99943-2232" required name="Telefone">
- 								<div class="invalid-feedback" style="width: 100%;">
- 									É claro que o número é obrigatório, <br>como irão te avisar que está contratado?
- 								</div>
- 							</div>
- 						</div>
- 						<div class="col-md-3 mb-3">
- 							<label for="SEXO">Sexo</label>
- 							<select class="custom-select d-block w-100" id="sexo" required name="Sexo">
- 								<option value="">
- 								Escolha...</option>
- 								<option>Masculino</option>
- 								<option>Feminino</option>
- 							</select>
- 							<div class="invalid-feedback">
- 								Por favor, escolha o seu sexo.
- 							</div>
- 						</div>
- 						<div class="col-md-3 mb-3">
- 							<label for="estado_civil">Estado civil</label>
- 							<select class="custom-select d-block w-100" id="estado_civil" required name="EstadoCivil">
- 								<option value="">
- 								Escolha...</option>
- 								<option>Solteiro (a)</option>
- 								<option>Casado (a)</option>
- 								<option>União Estável</option>
- 								<option>Separado (a)</option>
-
- 								<option>Divoriado (a)</option>
- 								<option>Viúvo (a)</option>
- 							</select>
-
-
- 						</div>
-
- 						<div class="col-md-3 mb-3">
- 							<label for="cc-numero">Ano de nascimento</label>
- 							<div class="input-group">
- 								<div class="input-group-prepend"> </div>
- 								<input type="text" class="form-control" id="cc-numero" placeholder="08/11/1988" required name="">
- 								<div class="invalid-feedback" style="width: 100%;">
- 									Insira sua data de nascimento
- 								</div>
- 							</div>
- 						</div>	
- 					</div>	
+ 		</div>	
+ 	<!-- FIM TERCEIRA LINHA -->
+ 						
 
  					<!-- TELEFONE E SEXO -->
 
@@ -376,8 +301,7 @@
  						<div class="invalid-feedback">
  							Realmente não há nada que você possa definir como uma qualificação?
  						</div>
-<<<<<<< HEAD
-=======
+
  					</div>
  				</nav>
  				<!-- ENDEREÇO -->
@@ -388,7 +312,7 @@
  					<div class="invalid-feedback">
  						Realmente não há nada que você possa definir como uma qualificação?
  					</div>
->>>>>>> parent of 5166a6a... 3.1.2
+
 
 
  					</div>
@@ -434,19 +358,13 @@
 
  							</div>
  						</div>
-<<<<<<< HEAD
-=======
+
  					</div>
  				</h4>
  			</div>
  		</div>
  	</div>
->>>>>>> parent of 5166a6a... 3.1.2
 
-
-
-
-<<<<<<< HEAD
  					</div>
 
 
@@ -461,7 +379,7 @@
  		
 
  		
-=======
+
 
 
  <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
@@ -473,7 +391,6 @@
 
 </nav>
 </form>
->>>>>>> parent of 5166a6a... 3.1.2
 
 
  		<!-- Fim do preenchimento dos dados do currículo -->
