@@ -7,12 +7,10 @@ $ftelefone= utf8_decode($_POST["Telefone"]);
 $fsexo= utf8_decode($_POST["Sexo"]);
 /*
 $festadocivil= utf8_decode($_POST["EstadoCivil"]);
-
-$fnascimento= utf8_decode($_POST["Nascimento"]);
 */
-
-$festado= utf8_decode($_POST["Estado"]);
+$fnascimento= utf8_decode($_POST["Nascimento"]);
 /*
+$festado= utf8_decode($_POST["Estado"]);
 $fcidade= utf8_decode($_POST["Cidade"]);
 $fcep= utf8_decode($_POST["CEP"]);
 $fendereco= utf8_decode($_POST["Endereco"]);
@@ -41,22 +39,21 @@ $pdf->Cell(45,20,"Estado Civil:",0,0,'L');
 $pdf->setFont('arial','',12);
 $pdf->Cell(0,20,"$festadocivil",0,1,'L');
 
-
+*/
 
 //nascimento
 $pdf->SetFont('arial','B',12);
 $pdf->Cell(37,20,"Nascimento:",0,0,'L');
 $pdf->setFont('arial','',12);
 $pdf->Cell(0,20,$fnascimento,0,1,'L');
-*/
-
+/*
 
 //estado
 $pdf->SetFont('arial','B',12);
 $pdf->Cell(37,20,"Estado:",0,0,'L');
 $pdf->setFont('arial','',12);
 $pdf->Cell(0,20,$festado,0,1,'L');
-/*
+
 //cidade
 $pdf->SetFont('arial','B',12);
 $pdf->Cell(37,20,"Cidade:",0,0,'L');
