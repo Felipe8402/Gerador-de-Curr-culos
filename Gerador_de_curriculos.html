@@ -148,7 +148,7 @@
 
  		<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
 
-
+<form name="formulario" method="post" action="gerarpdf.php" >
 
  		<!-- Início do preenchimento dos dados do currículo -->
  		<div class="container py-5 text-center align-items-center">
@@ -165,7 +165,7 @@
  				<div class="col-md-14 mb-3">
  					<!-- PRIMEIRA LINHA -->
  					<label for="text-center">Nome completo</label>
- 					<input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+ 					<input type="text" class="form-control" id="firstName" placeholder="" value="" required name="Nome">
  					<div class="invalid-feedback">
  						Valid first name is required.
  					</div>  
@@ -347,7 +347,7 @@
  				<div class="col-md-14 mb-5">
  					<label for="endereco">Qualificações</label>
  					<textarea class="form-control" rows="3" id="experiencia1Atividades" placeholder="- Curso completo de inglês na empresa SpeakEnglish 
-- Curso de violão completo" required></textarea>
+ 					- Curso de violão completo" required></textarea>
  					<div class="invalid-feedback">
  						Realmente não há nada que você possa definir como uma qualificação?
  					</div>
@@ -398,25 +398,26 @@
 
  						</div>
  					</div>
- 				</h4>
- 			</div>
- 		</div>
- 	</div>
+ 			
+ 		
 
 
  </div>
 
 
 
-
- <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
-
-</form>
+<div class="text-center">
+<input type="reset" value="Limpar tudo">
+<input type="Submit" value="Gerar currículo">
+</div>
+<br>
 
 
 
 
 </nav>
+</form>
+
 </form>
 
 
@@ -467,6 +468,7 @@
   		popup.classList.toggle("show");
   	}
   </script>
+
 
 </body>
 </html>
