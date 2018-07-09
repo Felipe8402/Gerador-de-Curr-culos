@@ -179,7 +179,7 @@
  						<div class="input-group-prepend">
  							<span class="input-group-text">@</span>
  						</div>
- 						<input type="text" class="form-control" id="email" placeholder="meuemail@aquelelá.com" required>
+ 						<input type="text" class="form-control" id="email" placeholder="meuemail@aquelelá.com" required name="EmailDoUsuario">
  						<div class="invalid-feedback" style="width: 100%;">
  							Seu email é obrigatório, ele transparece um ar profissional. 
  						</div>
@@ -192,10 +192,8 @@
  						<label for="cc-numero">Telefone</label>
  						<div class="input-group">
  							<div class="input-group-prepend"> </div>
- 							<input type="text" class="form-control" id="cc-numero" placeholder="(46) 99943-2232" required>
- 							<div class="invalid-feedback" style="width: 100%;">
- 								É claro que o número é obrigatório, <br>como irão te avisar que está contratado?
- 							</div>
+ 							<input type="text" class="form-control" id="cc-numero" placeholder="(46) 99943-2232" required name="Telefone">
+ 							
  						</div>
  					</div>
 
@@ -204,7 +202,7 @@
  					<!-- SEXO -->
  					<div class="col-md-3 mb-3">
  						<label for="SEXO">Sexo</label>
- 						<select class="custom-select d-block w-100" id="sexo" required>
+ 						<select class="custom-select d-block w-100" id="sexo" required name="Sexo">
  							<option value="">
  							Escolha...</option>
  							<option>Masculino</option>
@@ -214,9 +212,11 @@
  							Por favor, escolha o seu sexo.
  						</div>
  					</div>
+ 				</div>
+
  					<div class="col-md-3 mb-3">
- 						<label for="estado_civil">Estado civil</label>
- 						<select class="custom-select d-block w-100" id="estado_civil" required>
+ 						<label for="EstadoCivil">Estado civil</label>
+ <select class="custom-select d-block w-100" id="EstadoCivil" required name="EstadoCivil">
  							<option value="">
  							Escolha...</option>
  							<option>Solteiro (a)</option>
@@ -227,15 +227,13 @@
  							<option>Divoriado (a)</option>
  							<option>Viúvo (a)</option>
  						</select>
- 						<div class="invalid-feedback">
- 							Por favor, escolha o seu sexo.
- 						</div>
+ 						
  					</div>
  					<div class="col-md-3 mb-3">
  						<label for="cc-numero">Ano de nascimento</label>
  						<div class="input-group">
  							<div class="input-group-prepend"> </div>
- 							<input type="text" class="form-control" id="cc-numero" placeholder="08/11/1988" required>
+ 							<input type="text" class="form-control" id="cc-numero" placeholder="08/11/1988" required name="Nascimento">
  							<div class="invalid-feedback" style="width: 100%;">
  								Insira sua data de nascimento
  							</div>
@@ -249,7 +247,7 @@
  				<div class="row"> 
  					<div class="col-md-4 mb-3">
  						<label for="estado">Estado</label>
- 						<select class="custom-select d-block w-100" id="estado" required>
+ 						<select class="custom-select d-block w-100" id="estado" required name="Estado">
  							<option value="">
  							Escolha...</option>
  							<option>Acre</option>; <option>Alagoas</option>; <option>Amapá</option>; <option>Amazonas</option>; <option>Bahia</option>;
@@ -259,29 +257,20 @@
  							<option>Rio Grande do Norte</option>; <option>Rio Grande do Sul</option>; <option>Rondônia</option>; <option>Roraima</option>
  							<option>Santa Catarina</option>; <option>São Paulo</option>; <option>Sergipe</option>; <option>Tocantins</option>;  
  						</select>
- 						<div class="invalid-feedback">
- 							Por favor, insira um estado válido.
- 						</div>
  					</div>
  					<!-- ESTADO -->
 
  					<!-- CIDADE -->
  					<div class="col-md-5 mb-3">
  						<label for="endereco">Cidade</label>
- 						<input type="text" class="form-control" id="endereco" placeholder="Francisco Beltrão" required>
- 						<div class="invalid-feedback">
- 							Por favor, insira a cidade onde você reside.
- 						</div>
+ 						<input type="text" class="form-control" id="endereco" placeholder="Francisco Beltrão" required name="Cidade">
  					</div>
  					<!-- CIDADE -->
 
  					<!-- CEP -->
  					<div class="col-md-3 mb-3">
  						<label for="cep">CEP</label>
- 						<input type="text" class="form-control" id="cep" placeholder="856010-63" required>
- 						<div class="invalid-feedback">
- 							É obrigatório inserir um CEP.
- 						</div>
+ 						<input type="text" class="form-control" id="cep" placeholder="856010-63" required name="CEP">
  					</div>
  					<!-- CEP -->
 
@@ -289,10 +278,7 @@
 
  					<div class="col-md-12 mb-5">
  						<label for="text-center">Endereço</label>
- 						<input type="text" class="form-control" id="endereco" placeholder="Rua Canarinhos, nº2084" required>
- 						<div class="invalid-feedback">
- 							Por favor, insira um endereço.
- 						</div>
+ 						<input type="text" class="form-control" id="endereco" placeholder="Rua Canarinhos, nº2084" required name="Endereco">
  					</div>
  				</div>
  				<!--FIM DOS DADOS PESSOAIS -->
@@ -308,39 +294,30 @@
  						<hr>
 
  						<label for="text-center">Curso</label>
- 						<input type="text" class="form-control" id="Formação" placeholder="Ensino médio completo / Administração" required>
+ 						<input type="text" class="form-control" id="Formação" placeholder="Ensino médio completo / Administração" required name="Curso">
 
  					</div>
  				</div>
  				<nav class="row">
  					<div class="col-md-5 mb-3">
  						<label for="endereco">Instituição</label>
- 						<input type="text" class="form-control" id="instituição" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade" required>
- 						<div class="invalid-feedback">
- 							Por favor, insira a cidade onde você reside.
- 						</div>
+ 						<input type="text" class="form-control" id="instituição" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade" required name="Instituicao">
  					</div>
  					<!-- CIDADE -->
 
  					<!-- CEP -->
  					<div class="col-md-3 mb-3">
  						<label for="cep">Conclusão</label>
- 						<select class="custom-select d-block w-100" id="conclusão" required>
+ 						<select class="custom-select d-block w-100" id="conclusão" required name="Conclusao">
  							<option value="">
  							Escolha...</option>
  							<option>Concluído em:</option>
  							<option>Será concluído em:</option>
  						</select>
- 						<div class="invalid-feedback">
- 							É obrigatório inserir um ano de conclusão.
- 						</div>
  					</div>
  					<div class="col-md-4 mb-3">
  						<label for="endereco">Ano</label>
- 						<input type="text" class="form-control" id="ano" required>
- 						<div class="invalid-feedback">
- 							Por favor, insira o ano de conclusão.
- 						</div>
+ 						<input type="text" class="form-control" id="ano" required name="AnoConclusao">
  					</div>
  				</nav>
  				<!-- ENDEREÇO -->
@@ -348,9 +325,6 @@
  					<label for="endereco">Qualificações</label>
  					<textarea class="form-control" rows="3" id="experiencia1Atividades" placeholder="- Curso completo de inglês na empresa SpeakEnglish 
  					- Curso de violão completo" required></textarea>
- 					<div class="invalid-feedback">
- 						Realmente não há nada que você possa definir como uma qualificação?
- 					</div>
 
 
  				</div>
