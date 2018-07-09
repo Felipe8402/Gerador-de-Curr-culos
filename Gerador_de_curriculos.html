@@ -101,7 +101,7 @@
  		agressivo para os olhos, comparando com o branco 								-->
 
 
- <!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
 
  	<div class="container">  	
  		<div class="py-4 text-center"> 
@@ -125,32 +125,40 @@
  		</div> 
  	</div>
 
- <!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+
+ <!-- DADOS UTILIZADOS EM TODO O CÓDIGO ABAIXO -->
+ 
 <form name="nome" method="post" action="gerarpdf.php" >
 <form class="needs-validation">
 
-	<!-- TÍTULO DADOS PESSOAIS -->
- 	<div class="py-5 text-center align-items-center">	
+
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+
+<!-- INÍCIO DADOS PESSOAIS -->
+ 	<div class="py-4 text-center align-items-center">	
  	<div class="container">
  			<h4>dados pessoais <div class="popup" onclick="myPopup()"> + <span class="popuptext" id="myPopup"> <h5 style="font-size: 50%">
  			Os campos abaixo devem ser preenchidos com informações básicas e extremamente necessárias para a criação de um currículo</h5></span> </div>
 			</h4> <hr> 
+	
 
-	<!-- DADOS PESSOAIS -->		
-
- 	<!-- PRIMEIRA LINHA -->		
+ 	<!-- INÍCIO PRIMEIRA LINHA -->		
  			<div class="col-md-14 mb-3">					
  			<label for="text-center">Nome completo</label>
  			<input name="Nome" type="text" class="form-control" id="firstName" placeholder="" required></div>
+ 	<!-- FIM PRIMEIRO LINHA -->
 
- 	<!-- SEGUNDA LINHA -->			
+ 	<!-- INÍCIO SEGUNDA LINHA -->			
  			<div class="col-md-14 mb-3">
  			<label for="nickname">Email</label>
  			<div class="input-group">
  			<div class="input-group-prepend">
  			<span class="input-group-text">@</span></div>		
  			<input name="Email" type="text" class="form-control" id="email" placeholder="meuemail@aquelelá.com" required></div></div>
-		
+	<!-- FIM SEGUNDA LINHA -->
+
+
  	<!-- INÍCIO TERCEIRA LINHA -->
  		<div class="row">
 
@@ -191,229 +199,194 @@
 
  		</div>	
  	<!-- FIM TERCEIRA LINHA -->
- 						
-
- 					<!-- TELEFONE E SEXO -->
-
- 					<!-- ESTADO -->
- 					<div class="row"> 
- 						<div class="col-md-4 mb-3">
- 							<label for="estado">Estado</label>
- 							<select class="custom-select d-block w-100" id="estado" required>
- 								<option value="">
- 								Escolha...</option>
- 								<option>Acre</option>; <option>Alagoas</option>; <option>Amapá</option>; <option>Amazonas</option>; <option>Bahia</option>;
- 								<option>Ceará</option>;  <option>Distrito Federal</option>;  <option>Espírito Santo</option>;  <option>Goiás</option>;
- 								<option>Maranhão</option>; <option>Mato Grosso do Sul</option>; <option>Minas Gerais</option>; <option>Pará</option>;
- 								<option>Paraíba</option>; <option>Paraná</option>; <option>Pernambuco</option>; <option>Piauí</option>; <option>Rio de Janeiro</option>;
- 								<option>Rio Grande do Norte</option>; <option>Rio Grande do Sul</option>; <option>Rondônia</option>; <option>Roraima</option>
- 								<option>Santa Catarina</option>; <option>São Paulo</option>; <option>Sergipe</option>; <option>Tocantins</option>;  
- 							</select>
- 							<div class="invalid-feedback">
- 								Por favor, insira um estado válido.
- 							</div>
- 						</div>
- 						<!-- ESTADO -->
-
- 						<!-- CIDADE -->
- 						<div class="col-md-5 mb-3">
- 							<label for="endereco">Cidade</label>
- 							<input type="text" class="form-control" id="endereco" placeholder="Francisco Beltrão" required>
- 							<div class="invalid-feedback">
- 								Por favor, insira a cidade onde você reside.
- 							</div>
- 						</div>
- 						<!-- CIDADE -->
-
- 						<!-- CEP -->
- 						<div class="col-md-3 mb-3">
- 							<label for="cep">CEP</label>
- 							<input type="text" class="form-control" id="cep" placeholder="856010-63" required>
- 							<div class="invalid-feedback">
- 								É obrigatório inserir um CEP.
- 							</div>
- 						</div>
- 						<!-- CEP -->
-
- 						<!-- ENDEREÇO -->
-
- 						<div class="col-md-12 mb-5">
- 							<label for="text-center">Endereço</label>
- 							<input type="text" class="form-control" id="endereco" placeholder="Rua Canarinhos, nº2084" required>
- 							<div class="invalid-feedback">
- 								Por favor, insira um endereço.
- 							</div>
- 						</div>
- 					</div>
- 					<!--FIM DOS DADOS PESSOAIS -->
-
-
- 					<!-- FORMAÇÃO PROFISSIONAL-->
- 					<!-- Início do preenchimento dos dados do currículo -->
- 					<div class="col-md-14 mb-3">
- 						<h4>formação profissional <div class="popup" onclick=" myPopup2()"> +
- 							<span class="popuptext" id="myPopup2"> <h5 style="font-size: 50%"> Preencha os campos abaixo com a sua formação escolar ou graduação.</h5></span>
- 						</h4>
- 						<div class="needs-validation">
- 							<hr>
-
- 							<label for="text-center">Curso</label>
- 							<input type="text" class="form-control" id="Formação" placeholder="Ensino médio completo / Administração" required>
-
- 						</div>
- 					</div>
- 					<nav class="row">
- 						<div class="col-md-5 mb-3">
- 							<label for="endereco">Instituição</label>
- 							<input type="text" class="form-control" id="instituição" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade" required>
- 							<div class="invalid-feedback">
- 								Por favor, insira a cidade onde você reside.
- 							</div>
- 						</div>
- 						<!-- CIDADE -->
-
- 						<!-- CEP -->
- 						<div class="col-md-3 mb-3">
- 							<label for="cep">Conclusão</label>
- 							<select class="custom-select d-block w-100" id="conclusão" required>
- 								<option value="">
- 								Escolha...</option>
- 								<option>Concluído em:</option>
- 								<option>Será concluído em:</option>
- 							</select>
- 							<div class="invalid-feedback">
- 								É obrigatório inserir um ano de conclusão.
- 							</div>
- 						</div>
- 						<div class="col-md-4 mb-3">
- 							<label for="endereco">Ano</label>
- 							<input type="text" class="form-control" id="ano" required>
- 							<div class="invalid-feedback">
- 								Por favor, insira o ano de conclusão.
- 							</div>
- 						</div>
- 					</nav>
- 					<!-- ENDEREÇO -->
- 					<div class="col-md-14 mb-5">
- 						<label for="endereco">Qualificações</label>
- 						<textarea class="form-control" rows="3" id="experiencia1Atividades" placeholder="- Curso completo de inglês na empresa SpeakEnglish 
- 						- Curso de violão completo" required></textarea>
- 						<div class="invalid-feedback">
- 							Realmente não há nada que você possa definir como uma qualificação?
- 						</div>
-
- 					</div>
- 				</nav>
- 				<!-- ENDEREÇO -->
- 				<div class="col-md-14 mb-5">
- 					<label for="endereco">Qualificações</label>
- 					<textarea class="form-control" rows="3" id="experiencia1Atividades" placeholder="- Curso completo de inglês na empresa SpeakEnglish 
-- Curso de violão completo" required></textarea>
- 					<div class="invalid-feedback">
- 						Realmente não há nada que você possa definir como uma qualificação?
- 					</div>
-
-
-
- 					</div>
-</form>
-
- 					<!-- EXPERIÊNCIA PROFISSIONAL-->
- 					<!-- Início do preenchimento dos dados do currículo -->
- 								<div class="col-md-14 mb-4">
- 								<div>
- 								<h4>experiência profissional <div class="popup" onclick=" myPopup3()"> +
- 								<span class="popuptext" id="myPopup2"> <h5 style="font-size: 50%">Se você já possui experiência de trabalho, preencha os campos abaixo e dê um "up" no seu currículo</h5></span> </h4> </div>
- 							
-								<hr>
-
- 								<div class="col-md-14 mb-3">
- 								<label for="text-center">Empresa</label>
- 								<input type="text" class="form-control" id="Formação" placeholder="Google">
- 								<nav class="row">	
- 								<div class="col-md-6 mb-3">
- 									<label for="endereco">Função</label>
- 										<input type="text" class="form-control" id="instituição" placeholder="Limpeza de sofás">
- 									</div>
- 									<!-- CIDADE -->
-
- 									<!-- CEP -->
- 									<div class="col-md-3 mb-3">
- 										<label for="endereco">Data de entrada</label>
- 										<input type="text" class="form-control" id="instituição" placeholder="01/08/2017">
- 									</div>
-
- 									<div class="col-md-3 mb-3">
- 										<label for="endereco">Data de saída</label>
- 										<input type="text" class="form-control" id="instituição" placeholder="03/05/2017">
- 									</div>
-
- 								</nav>
- 								<!-- ENDEREÇO -->
- 								<div class="col-md-14 mb-5">
- 									<label for="endereco">Atividades realizadas</label>
- 									<textarea class="form-control" rows="3" id="experiencia1Atividades" placeholder="Limpava todas as espécies de sofá" ></textarea>
-
- 								</div>
-
- 							</div>
- 						</div>
-
- 					</div>
- 				</h4>
- 			</div>
- 		</div>
- 	</div>
-
- 					</div>
-
-
-
- 					<div class="text-center">
- 						<input type="reset" value="Limpar tudo">
- 						<input type="Submit" value="Gerar currículo">
- 					</div>
- 					<br>
- 				</nav>
  			
+
+ 	<!-- INÍCIO QUARTA LINHA -->
+ 		<div class="row"> 
+
+ 		<!-- PRIMEIRO BLOCO -->
+ 			<div class="col-md-4 mb-3">
+ 			<label for="estado">Estado</label>
+ 			<select name="Estado" class="custom-select d-block w-100" id="estado" required>
+ 			<option value="">Escolha...</option>
+ 			<option>Acre</option>; <option>Alagoas</option>; <option>Amapá</option>; <option>Amazonas</option>; <option>Bahia</option>;
+ 			<option>Ceará</option>;  <option>Distrito Federal</option>;  <option>Espírito Santo</option>;  <option>Goiás</option>;
+ 			<option>Maranhão</option>; <option>Mato Grosso do Sul</option>; <option>Minas Gerais</option>; <option>Pará</option>;
+ 			<option>Paraíba</option>; <option>Paraná</option>; <option>Pernambuco</option>; <option>Piauí</option>; <option>Rio de Janeiro</option>;
+ 			<option>Rio Grande do Norte</option>; <option>Rio Grande do Sul</option>; <option>Rondônia</option>; <option>Roraima</option>
+ 			<option>Santa Catarina</option>; <option>São Paulo</option>; <option>Sergipe</option>; <option>Tocantins</option></select></div>
+ 							 							
+ 		<!-- SEGUNDO BLOCO -->
+ 			<div class="col-md-5 mb-3">
+ 			<label for="endereco">Cidade</label>
+ 			<input name="Cidade" type="text" class="form-control" id="endereco" placeholder="Francisco Beltrão" required></div>
+ 						
+ 		<!-- TERCEIRO BLOCO -->
+ 			<div class="col-md-3 mb-3">
+ 			<label for="cep">CEP</label>
+ 			<input name="CEP" type="text" class="form-control" id="cep" placeholder="856010-63" required></div>
+ 			
+ 		<!-- QUARTO BLOCO -->
+ 			<div class="col-md-12 mb-5">
+ 			<label for="text-center">Endereço</label>
+ 			<input name="Endereco" type="text" class="form-control" id="endereco" placeholder="Rua Canarinhos, nº2084" required></div>
+
+ 		</div>
+ 	<!-- FIM QUARTA LINHA -->
+
+ 	</div></div>				
+<!--FIM DADOS PESSOAIS -->
+
+
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+
+
+<!-- INÍCIO FORMAÇÃO PROFISSIONAL-->
+ 	<div class="py-4 text-center align-items-center">	
+ 	<div class="container">
+ 			<h4>formação profissional <div class="popup" onclick="myPopup2()"> + <span class="popuptext" id="myPopup2"> <h5 style="font-size: 50%">
+ 			Preencha os campos abaixo com a sua formação escolar ou graduação</h5></span></div></h4><hr> 
+		
+	<!-- INÍCIO PRIMEIRA LINHA -->
+ 		<div class="row"> 
+
+ 		<!-- PRIMEIRO BLOCO -->
+ 			<div class="col-md-6 mb-3">	
+ 			<label for="text-center">Curso</label>
+ 			<input name="Curso" type="text" class="form-control" id="Formação" placeholder="Ensino médio completo / Administração" required></div>
+
+ 		<!-- SEGUNDO BLOCO -->			
+ 			<div class="col-md-6 mb-3">
+ 			<label for="endereco">Instituição</label>
+ 			<input name="Instituicao" type="text" class="form-control" id="instituição" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade" required></div>
+ 			
+ 		</div>
+ 	<!-- FIM PRIMEIRA LINHA -->		
+
+ 	<!-- INÍCIO SEGUNDA LINHA -->
+ 		<div class="row"> 	
+
+ 		<!-- PRIMEIRO BLOCO -->
+ 			<div class="col-md-4 mb-3">	
+ 			<label for="text-center">Ano Inicial</label>
+ 			<input name="AnoInicial" type="text" class="form-control" id="Formação" placeholder="08/07/2012" required></div>
+
+		<!-- SEGUNDO BLOCO -->
+ 			<div class="col-md-4 mb-3">
+ 			<label for="cep">Conclusão</label>
+ 			<select name="Conclusao" class="custom-select d-block w-100" id="conclusão" required>
+ 			<option value="">Escolha...</option>
+ 			<option>Concluído em:</option>
+ 			<option>Será concluído em:</option></select></div>
+ 			
+ 		<!-- SEGUNDO BLOCO -->					
+ 			<div class="col-md-4 mb-3">
+ 			<label for="endereco">Ano Final</label>
+ 			<input name="AnoFinal" type="text" class="form-control" id="ano" required></div>
+
+ 		</div>
+ 	<!-- FIM SEGUNDA LINHA -->
+ 			
+ 	<!-- TERCEIRA LINHA -->	
+ 			<div class="col-md-14 mb-5">
+ 			<label for="endereco">Qualificações</label>
+ 			<textarea name="Qualificacoes" class="form-control" rows="3" id="experiencia1Atividades" placeholder="- Curso completo de inglês na empresa SpeakEnglish 
+- Curso de violão completo" required></textarea></div>
+
+	</div></div>
+<!-- FIM FORMAÇÃO PROFISSIONAL -->
+
+
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+
+
+<!-- INÍCIO EXPERIÊNCIA PROFISSIONAL-->
+	<div class="py-4 text-center align-items-center">	
+ 	<div class="container">
+ 			<h4>experiência profissional <div class="popup" onclick="myPopup3()"> + <span class="popuptext" id="myPopup3"> <h5 style="font-size: 50%">
+ 			Se você já possui experiência de trabalho, preencha os campos abaixo e dê um "up" no seu currículo</h5></span></div></h4><hr> 
+
+
+ 	<!-- PRIMEIRA LINHA -->
+			<div class="col-md-14 mb-3">
+ 			<label for="text-center">Empresa</label>
+ 			<input name="Empresa" type="text" class="form-control" id="Formação" placeholder="Google"></div>
  		
+ 	<!-- INÍCIO SEGUNDA LINHA -->
+ 		<div class="row">
 
+ 		<!-- PRIMEIRO BLOCO -->						
+ 			<div class="col-md-6 mb-3">
+ 			<label for="endereco">Função</label>
+ 			<input name="Funcao" type="text" class="form-control" id="instituição" placeholder="Limpeza de sofás"></div>
  		
+ 		<!-- SEGUNDO BLOCO -->	
+ 			<div class="col-md-3 mb-3">
+ 			<label for="endereco">Data de entrada</label>
+ 			<input name="DataEntrada" type="text" class="form-control" id="instituição" placeholder="01/08/2017"></div>
+ 									
+ 		<!-- TERCEIRO BLOCO -->
+ 			<div class="col-md-3 mb-3">
+ 			<label for="endereco">Data de saída</label>
+ 			<input name="DataSaida" type="text" class="form-control" id="instituição" placeholder="03/05/2017"></div>
+
+ 		</div>
+ 	<!-- FIM SEGUNDA LINHA -->
+
+ 	<!-- TERCEIRA LINHA -->
+ 			<div class="col-md-14 mb-5">
+ 			<label for="endereco">Atividades realizadas</label>
+ 			<textarea class="form-control" rows="3" id="experiencia1Atividades" placeholder="Limpava todas as espécies de sofá" ></textarea></div>
 
 
 
- <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
 
-</form>
-
-
+ 	 </div></div>
+ <!-- FIM EXPERIÊNCIA PROFISSIONAL -->
 
 
-</nav>
-</form>
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
 
 
- 		<!-- Fim do preenchimento dos dados do currículo -->
+<!-- BOTÕES DE CHAMADA DO PHP E LIMPEZA DOS DADOS -->	
+
+ 	<div class="text-center align-items-center">	
+ 	<div class="container">
+ 		<div class="row">
+ 				<div class="col-md-6 mb-3">
+				<input type="submit button" value="Gerar currículo" class="btn btn-lg btn-block btn-outline-primary"></div>
+				<div class="col-md-6 mb-3">
+				<input type="reset button" value="Gerar currículo" class="btn btn-lg btn-block btn-primary"></div></div>
+	</div></div>
+
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
 
 
+<!-- FIM DOS DADOS UTILIZADOS EM TODO O CÓDIGO ACIMA -->
+ <br><br><br><hr>
+ </form></form>					
 
- 		<!-- Bootstrap core JavaScript -->
 
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+
+
+<!-- 
+  --  SCRIPTS BASEADOS EM EXEMPLOS DOS SITES:
+  --
+  --  https://getbootstrap.com/docs/4.1/examples/
+  --  https://www.w3schools.com/js/default.asp
+  --
+ -->
  		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
  		<script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
  		<script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
  		<script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/holder.min.js"></script>
  		<script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function() {
-      	'use strict';
-
+   	    (function() {
+       	'use strict';
       	window.addEventListener('load', function() {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.getElementsByClassName('needs-validation');
-
-          // Loop over them and prevent submission
+          var forms = document.getElementsByClassName('needs-validation');  
           var validation = Array.prototype.filter.call(forms, function(form) {
           	form.addEventListener('submit', function(event) {
           		if (form.checkValidity() === false) {
@@ -421,25 +394,29 @@
           			event.stopPropagation();
           		}
           		form.classList.add('was-validated');
-          	}, false);
-          });
-      }, false);
-      })();
-  </script>
-  <script>
-  	function myPopup() {
+    		      	}, false);
+ 		         });
+   			   }, false);
+     		 })();
+  		</script>
+  		<script>
+  		function myPopup() {
   		var popup = document.getElementById("myPopup");
   		popup.classList.toggle("show");
-  	}
-  	function myPopup2() {
+  		}
+  		function myPopup2() {
   		var popup = document.getElementById("myPopup2");
   		popup.classList.toggle("show");
-  	}
-  	function myPopup3() {
+  		}
+  		function myPopup3() {
   		var popup = document.getElementById("myPopup3");
   		popup.classList.toggle("show");
-  	}
-  </script>
+  		}
+  		</script>
+
+
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+
 
 </body>
 </html>
