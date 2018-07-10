@@ -3,18 +3,24 @@
 
 
 <head> <!-- INÍCIO CABEÇALHO --> 
-
+	<style>
+	#menosazul {
+ 	position: fixed; top:0; left:0; z-index:9999;
+  	height:100vh; width:100vw;
+  	pointer-events: none;
+  	background-color: rgba(255,255,0,0.1); /* o 0.2 é a opacidade */
+  	mix-blend-mode: multiply;
+	}
+	</style>
 
 	<!-- Lista de caracteres que vão ser utilizados --> 
 	<meta charset="utf-8"> 
-	<!-- Lista de caracteres que vão ser utilizados -->
-
+	
 	<!-- Adaptação do site para qualquer dispositivo -->
 	<meta name="viewport" 
 	content="width=device-width, 
 	initial-scale=1, 
 	shrink-to-fit=no"> 
-	<!-- Adaptação do site para qualquer dispostivo --> 
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" 
@@ -23,15 +29,13 @@
 	crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://getbootstrap.com/docs/4.1/examples/checkout/form-validation.css">
 
-	<!-- Bootstrap CSS -->
 
 	<!-- Ícone e título da aba no navegador -->
 	<link rel="icon" 
 	href="bootstrap\img\icone_da_aba.png">
 	<title>Currículo</title>
-	<!-- Ícone e título da aba no navegador -->
+ 
 	<style>
-	/* Popup container - can be anything you want */
 	.popup {
 		position: relative;
 		display: inline-block;
@@ -42,7 +46,6 @@
 		user-select: none;
 	}
 
-	/* The actual popup */
 	.popup .popuptext {
 		visibility: hidden;
 		width: 160px;
@@ -58,7 +61,6 @@
 		margin-left: -80px;
 	}
 
-	/* Popup arrow */
 	.popup .popuptext::after {
 		content: "";
 		position: absolute;
@@ -70,14 +72,12 @@
 		border-color: #555 transparent transparent transparent;
 	}
 
-	/* Toggle this class - hide and show the popup */
 	.popup .show {
 		visibility: visible;
 		-webkit-animation: fadeIn 1s;
 		animation: fadeIn 1s;
 	}
 
-	/* Add animation (fade in the popup) */
 	@-webkit-keyframes fadeIn {
 		from {opacity: 0;} 
 		to {opacity: 1;}
@@ -97,8 +97,8 @@
 		<!-- INÍCIO CORPO -->
 		<body style="background-color: rgba(137, 153, 150, 0.1);">    
 
- 		<!-- style está adicionando uma cor de fundo para o site, a ideia é que seja menos 
- 		agressivo para os olhos, comparando com o branco 								-->
+ 		<!-- style está adicionando uma cor de fundo para o site auxiliando no filtro contra ao azul, a ideia é que seja menos 
+ 			agressivo para os olhos, comparando com o branco 								-->
 
 
 <!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
@@ -189,7 +189,7 @@
  			<option>Casado (a)</option>
  			<option>União Estável</option>
  			<option>Separado (a)</option>
-			<option>Divoriado (a)</option>
+			<option>Divorciado (a)</option>
  			<option>Viúvo (a)</option> </select></div>
 
  			<!-- QUARTO BLOCO -->					
@@ -353,10 +353,10 @@
  	<div class="text-center align-items-center">	
  	<div class="container">
  		<div class="row">
- 				<div class="col-md-6 mb-3">
-				<input type="submit button" value="Gerar currículo" class="btn btn-lg btn-block btn-outline-primary"></div>
 				<div class="col-md-6 mb-3">
-				<input type="reset button" value="Gerar currículo" class="btn btn-lg btn-block btn-primary"></div></div>
+				<input type="submit" value="gerar currículo" class="btn btn-lg btn-block btn-primary"></div>
+			 	<div class="col-md-6 mb-3">
+				<input type="reset" value="limpar dados" class="btn btn-lg btn-block btn-outline-primary"></div></div>
 	</div></div>
 
 <!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
@@ -366,7 +366,7 @@
  <br><br><br><hr>
  </form></form>					
 
-
+<div id="menosazul"><!-- Filtro para diminuir o azul das telas" --></div>
 <!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
 
 
