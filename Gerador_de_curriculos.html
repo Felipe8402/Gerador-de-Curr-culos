@@ -231,8 +231,11 @@
  			<label for="text-center">Endereço</label>
  			<input name="Endereco" type="text" class="form-control" id="endereco" placeholder="Rua Canarinhos, nº2084" required></div>
 
+ 		
  		</div>
  	<!-- FIM QUARTA LINHA -->
+
+ 								
 
  	</div></div>				
 <!--FIM DADOS PESSOAIS -->
@@ -241,7 +244,7 @@
 <!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
 
 
-<!-- INÍCIO FORMAÇÃO PROFISSIONAL-->
+<!-- INÍCIO FORMAÇÃO PROFISSIONAL 1-->
  	<div class="py-4 text-center align-items-center">	
  	<div class="container">
  			<h4>formação profissional <div class="popup" onclick="myPopup2()"> + <span class="popuptext" id="myPopup2"> <h5 style="font-size: 50%">
@@ -293,13 +296,78 @@
  			<textarea name="Qualificacoes" class="form-control" rows="3" id="experiencia1Atividades" placeholder="- Curso completo de inglês na empresa SpeakEnglish 
 - Curso de violão completo" required></textarea></div>
 
-	</div></div>
-<!-- FIM FORMAÇÃO PROFISSIONAL -->
+	<!-- BOTÃO FORMAÇÃO PROFISSIONAL 2 -->
+ 			<div class="col-md-14 mb-3">
+ 			<button  type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="Mudarestado1formacao('formacaoprofissional2')" style="display: block">adicionar segunda formação</button></div>
+
+		</div></div>
+<!-- FIM FORMAÇÃO PROFISSIONAL 1-->
 
 
 <!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
 
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
 
+
+<!-- INÍCIO FORMAÇÃO PROFISSIONAL 2 -->
+ 	<div class="py-4 text-center align-items-center"  id="formacaoprofissional2"  style="display: none">	
+ 	<div class="container"><hr> 
+		
+	<!-- INÍCIO PRIMEIRA LINHA -->
+ 		<div class="row"> 
+
+ 		<!-- PRIMEIRO BLOCO -->
+ 			<div class="col-md-6 mb-3">	
+ 			<label for="text-center">Curso</label>
+ 			<input name="Curso" type="text" class="form-control" id="Formação" placeholder="Ensino médio completo / Administração" required></div>
+
+ 		<!-- SEGUNDO BLOCO -->			
+ 			<div class="col-md-6 mb-3">
+ 			<label for="endereco">Instituição</label>
+ 			<input name="Instituicao" type="text" class="form-control" id="instituição" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade" required></div>
+ 			
+ 		</div>
+ 	<!-- FIM PRIMEIRA LINHA -->		
+
+ 	<!-- INÍCIO SEGUNDA LINHA -->
+ 		<div class="row"> 	
+
+ 		<!-- PRIMEIRO BLOCO -->
+ 			<div class="col-md-4 mb-3">	
+ 			<label for="text-center">Ano Inicial</label>
+ 			<input name="AnoInicial" type="text" class="form-control" id="Formação" placeholder="08/07/2012" required></div>
+
+		<!-- SEGUNDO BLOCO -->
+ 			<div class="col-md-4 mb-3">
+ 			<label for="cep">Conclusão</label>
+ 			<select name="Conclusao" class="custom-select d-block w-100" id="conclusão" required>
+ 			<option value="">Escolha...</option>
+ 			<option>Concluído em:</option>
+ 			<option>Será concluído em:</option></select></div>
+ 			
+ 		<!-- SEGUNDO BLOCO -->					
+ 			<div class="col-md-4 mb-3">
+ 			<label for="endereco">Ano Final</label>
+ 			<input name="AnoFinal" type="text" class="form-control" id="ano" required></div>
+
+ 		</div>
+ 	<!-- FIM SEGUNDA LINHA -->
+ 			
+ 	<!-- TERCEIRA LINHA -->	
+ 			<div class="col-md-14 mb-5">
+ 			<label for="endereco">Qualificações</label>
+ 			<textarea name="Qualificacoes" class="form-control" rows="3" id="experiencia1Atividades" placeholder="- Curso completo de inglês na empresa SpeakEnglish 
+- Curso de violão completo" required></textarea></div>
+
+	<!-- BOTÃO PARA REMOVER FORMAÇÃO PROFISSIONAL 2 -->
+			<div class="col-md-14 mb-3">
+ 			<button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="Mudarestadoformacao('formacaoprofissional2')">remover segunda formação</button></div>
+
+	</div></div>
+<!-- FIM FORMAÇÃO PROFISSIONAL 2-->
+
+
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
 <!-- INÍCIO EXPERIÊNCIA PROFISSIONAL-->
 	<div class="py-4 text-center align-items-center">	
  	<div class="container">
@@ -337,20 +405,70 @@
  			<div class="col-md-14 mb-5">
  			<label for="endereco">Atividades realizadas</label>
  			<textarea class="form-control" rows="3" id="experiencia1Atividades" placeholder="Limpava todas as espécies de sofá" ></textarea></div>
+ 	
+ 	<!-- BOTÃO -->
+ 	   		<div class="col-md-14 mb-3">
+ 			<button  type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="Mudarestado1('experienciaprofissional2')" style="display: block">adicionar segunda experiência</button></div>
 
-
-
-
- 	 </div></div>
+	</div></div>	
  <!-- FIM EXPERIÊNCIA PROFISSIONAL -->
 
 
 <!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
 
 
+
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+
+<!-- INÍCIO EXPERIÊNCIA PROFISSIONAL 2 -->
+	<div class="py-4 text-center align-items-center" id="experienciaprofissional2"  style="display: none">	
+ 	<div class="container"><hr> 
+
+
+ 	<!-- PRIMEIRA LINHA -->
+			<div class="col-md-14 mb-3">
+ 			<label for="text-center">Empresa</label>
+ 			<input name="Empresa" type="text" class="form-control" id="Formação" placeholder="Google"></div>
+ 		
+ 	<!-- INÍCIO SEGUNDA LINHA -->
+ 			<div class="row">
+
+ 		<!-- PRIMEIRO BLOCO -->						
+ 			<div class="col-md-6 mb-3">
+ 			<label for="endereco">Função</label>
+ 			<input name="Funcao" type="text" class="form-control" id="instituição" placeholder="Limpeza de sofás"></div>
+ 		
+ 		<!-- SEGUNDO BLOCO -->	
+ 			<div class="col-md-3 mb-3">
+ 			<label for="endereco">Data de entrada</label>
+ 			<input name="DataEntrada" type="text" class="form-control" id="instituição" placeholder="01/08/2017"></div>
+ 									
+ 		<!-- TERCEIRO BLOCO -->
+ 			<div class="col-md-3 mb-3">
+ 			<label for="endereco">Data de saída</label>
+ 			<input name="DataSaida" type="text" class="form-control" id="instituição" placeholder="03/05/2017"></div>
+
+ 		</div>
+ 	<!-- FIM SEGUNDA LINHA -->
+
+ 	<!-- TERCEIRA LINHA -->
+ 			<div class="col-md-14 mb-5">
+ 			<label for="endereco">Atividades realizadas</label>
+ 			<textarea class="form-control" rows="3" id="experiencia1Atividades" placeholder="Limpava todas as espécies de sofá" ></textarea></div>
+ 			
+ 	 <!-- BOTÃO -->
+ 			<div class="col-md-14 mb-3">
+ 			<button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="Mudarestado('experienciaprofissional2')">remover segunda experiencia</button></div>
+
+ 	</div></div>
+ <!-- FIM EXPERIÊNCIA PROFISSIONAL 2 -->
+
+
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+
 <!-- BOTÕES DE CHAMADA DO PHP E LIMPEZA DOS DADOS -->	
 
- 	<div class="text-center align-items-center">	
+ 	<div class="py-4 text-center align-items-center"><br>
  	<div class="container">
  		<div class="row">
 				<div class="col-md-6 mb-3">
@@ -413,6 +531,47 @@
   		popup.classList.toggle("show");
   		}
   		</script>
+  		<script>
+  		function Mudarestadoformacao(el) {
+  		var display = document.getElementById(el).style.display;
+  		if(display == "none")
+  			document.getElementById(el).style.display = 'block';
+  		else
+  			document.getElementById(el).style.display = 'none';
+ 	 	}
+ 		 </script>
+ 		  <script>
+ 	 	function Mudarestado1formacao(el) {
+  		var display = document.getElementById(el).style.display;
+  		if(display == "none")
+  			document.getElementById(el).style.display = 'block';
+  		else
+  			document.getElementById(el).style.display = 'block';
+ 	 	}
+  		</script>
+
+  		<script>
+  		function Mudarestado(el) {
+  		var display = document.getElementById(el).style.display;
+  		if(display == "none")
+  			document.getElementById(el).style.display = 'block';
+  		else
+  			document.getElementById(el).style.display = 'none';
+ 	 	}
+ 		 </script>
+ 		  <script>
+ 	 	function Mudarestado1(el) {
+  		var display = document.getElementById(el).style.display;
+  		if(display == "none")
+  			document.getElementById(el).style.display = 'block';
+  		else
+  			document.getElementById(el).style.display = 'block';
+ 	 	}
+  		</script>
+
+  		
+
+
 
 
 <!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
