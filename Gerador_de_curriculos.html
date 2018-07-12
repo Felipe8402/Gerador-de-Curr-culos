@@ -1,581 +1,348 @@
-<!doctype html> <!-- TIPO DE DOCUMENTO -->
-<html lang="pt-BR">  <!-- LINGUAGEM -->
-
-
-<head> <!-- INÍCIO CABEÇALHO --> 
-	<style>
-	#menosazul {
- 	position: fixed; top:0; left:0; z-index:9999;
-  	height:100vh; width:100vw;
-  	pointer-events: none;
-  	background-color: rgba(255,255,0,0.1); /* o 0.2 é a opacidade */
-  	mix-blend-mode: multiply;
-	}
-	</style>
-
-	<!-- Lista de caracteres que vão ser utilizados --> 
+<!doctype html>
+<html lang="pt-BR">  
+<head> 
 	<meta charset="utf-8"> 
-	
-	<!-- Adaptação do site para qualquer dispositivo -->
-	<meta name="viewport" 
-	content="width=device-width, 
-	initial-scale=1, 
-	shrink-to-fit=no"> 
-
-	<!-- Bootstrap CSS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
 	<link rel="stylesheet" 
 	href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" 
 	integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" 
 	crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://getbootstrap.com/docs/4.1/examples/checkout/form-validation.css">
-
-
-	<!-- Ícone e título da aba no navegador -->
-	<link rel="icon" 
-	href="bootstrap\img\icone_da_aba.png">
-	<title>Currículo</title>
- 
-	<style>
-	.popup {
-		position: relative;
-		display: inline-block;
-		cursor: pointer;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
+	<link rel="icon" href="img\icone_da_aba.png"> <title>Currículo</title>
+	<link rel="stylesheet" type="text/css" href="css/modelos.css">
+	<style type="text/css">
+	.icone {
+		width:40px; 
+		height:40px;
 	}
-
-	.popup .popuptext {
-		visibility: hidden;
-		width: 160px;
-		background-color: #555;
-		color: #fff;
-		text-align: center;
-		border-radius: 6px;
-		padding: 8px 0;
-		position: absolute;
-		z-index: 1;
-		bottom: 125%;
-		left: 50%;
-		margin-left: -80px;
-	}
-
-	.popup .popuptext::after {
-		content: "";
-		position: absolute;
-		top: 100%;
-		left: 50%;
-		margin-left: -5px;
-		border-width: 5px;
-		border-style: solid;
-		border-color: #555 transparent transparent transparent;
-	}
-
-	.popup .show {
-		visibility: visible;
-		-webkit-animation: fadeIn 1s;
-		animation: fadeIn 1s;
-	}
-
-	@-webkit-keyframes fadeIn {
-		from {opacity: 0;} 
-		to {opacity: 1;}
-	}
-
-	@keyframes fadeIn {
-		from {opacity: 0;}
-		to {opacity:1 ;}
-	}
+	body { background-image:url('img/l6.png'); }
+	button:focus {outline:none;} /* remove a borda ao clicar no link*/
 </style>
 
-</head> <!-- FIM CABEÇALHO -->
 
 
+</head> 
+
+<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
+
+<body>  
+	<div class="container text-center">
+		<h1 class="py-4">crie o seu currículo<br>com a sua cara</h1><br>
+		<div id="imagens" class="row mb-5 center">
+			<img class="d-block icone mx-auto borda" src="img\homem_branco.png">
+			<img class="d-block icone mx-auto" src="img\mulher_morena.png">
+			<img class="d-block icone mx-auto" src="img\homem_moreno_oculos.png">
+			<img class="d-block icone mx-auto" src="img\mulher_branca.png">
+			<img class="d-block icone mx-auto" src="img\homem_idoso.png">
+			<img class="d-block icone mx-auto" src="img\gravata.png">
+		</div>
+		<p class="lead mb-5">
+			o mercado atual exige um profissional com experiência, dedicação e formação em diversas áreas 	
+			<br>para que isso seja apresentado ao contratante, é necessário um currículo que represente quem você é
+		</p>
+		<h4> 
+			<small>
+				- este site foi idealizado utilizando a simplicidade e a facilidade <br>para criar um documento tão importante - 
+			</small>
+		</h4> 
+	</div> 
 
 
-		<!-- INÍCIO CORPO -->
-		<body style="background-color: rgba(137, 153, 150, 0.1);">    
+	<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--===--==--==--==--==--==--==--==-->
+	<!-- INÍCIO DADOS PESSOAIS -->
 
- 		<!-- style está adicionando uma cor de fundo para o site auxiliando no filtro contra ao azul, a ideia é que seja menos 
- 			agressivo para os olhos, comparando com o branco 								-->
-
-
-<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
-
- 	<div class="container">  	
- 		<div class="py-4 text-center"> 
- 				<h2 style="font-size: 50px;">
- 				crie o seu currículo <br> com a sua cara 
- 				</h2> <br> 		
- 					<nav class="nav nav-masthead justify-content-center row-fluid";>
- 						<img class="d-block mx-auto" src="bootstrap\img\homem_branco.png" alt="" width="40" height="40">
- 						<img class="d-block mx-auto" src="bootstrap\img\homem_idoso.png" alt="" width="40" height="40">
- 						<img class="d-block mx-auto" src="bootstrap\img\homem_moreno_oculos.png" alt="" width="40" height="40">
- 						<img class="d-block mx-auto" src="bootstrap\img\mulher_branca.png" alt="" width="40" height="40">
- 						<img class="d-block mx-auto" src="bootstrap\img\mulher_morena.png" alt="" width="40" height="40">
- 						<img class="d-block mx-auto" src="bootstrap\img\gravata.png" alt="" width="45" height="45">
- 					</nav> <br>
- 							<p class="lead">
- 								o mercado atual exige um profissional com experiência, dedicação e formação em diversas áreas <br>	
- 								para que isso seja apresentado ao contratante, é necessário um currículo que represente quem você é <br><br>
- 								<h6 style="font-size: 125%">
- 								- este site foi idealizado utilizando a simplicidade e a facilidade <br>para criar um documento tão importante - </h6> <br>   
- 							</p>
- 		</div> 
- 	</div>
-
-<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
-
- <!-- DADOS UTILIZADOS EM TODO O CÓDIGO ABAIXO -->
- 
-<form name="nome" method="post" action="gerarpdf.php" >
-<form class="needs-validation">
-
-
-<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
-
-<!-- INÍCIO DADOS PESSOAIS -->
- 	<div class="py-4 text-center align-items-center">	
- 	<div class="container">
- 			<h4>dados pessoais <div class="popup" onclick="myPopup()"> + <span class="popuptext" id="myPopup"> <h5 style="font-size: 50%">
- 			Os campos abaixo devem ser preenchidos com informações básicas e extremamente necessárias para a criação de um currículo</h5></span> </div>
-			</h4> <hr> 
+	<button style="border: 0; background: transparent;" id="btn_dados_pessoais" class="py-4 container text-center d-block">
+		<img src="img/icons8-divisa-circulada-à-abaixo-80.png">
+	</button><br><br>
 	
+	<form id="aparecer" style="display: none">v
+		<div id="HTMLtoPDF">
+			<div class="py-4 text-center align-items-center">	
+				<div class="container">
+					<h4>dados pessoais
+					</h4>
+					<div class="popup" onclick="myPopup()">
+						<strong style="font-size: 25px"> + </strong>
+						<span class="popuptext" id="myPopup">
+							<small>Os campos abaixo devem ser preenchidos com informações básicas e extremamente necessárias para a criação de um currículo
+							</small>
+						</span>
+					</div>
+				</div>
 
- 	<!-- INÍCIO PRIMEIRA LINHA -->		
- 			<div class="col-md-14 mb-3">					
- 			<label for="text-center">Nome completo</label>
- 			<input name="Nome" type="text" class="form-control" id="firstName" placeholder="" required></div>
- 	<!-- FIM PRIMEIRO LINHA -->
 
- 	<!-- INÍCIO SEGUNDA LINHA -->			
- 			<div class="col-md-14 mb-3">
- 			<label for="nickname">Email</label>
- 			<div class="input-group">
- 			<div class="input-group-prepend">
- 			<span class="input-group-text">@</span></div>		
- 			<input name="Email" type="text" class="form-control" id="email" placeholder="meuemail@aquelelá.com" required></div></div>
+
+				<div class="container text-center" >
+					<hr> 
+					<!-- INÍCIO PRIMEIRA LINHA -->		
+					<div class="col-md-14 mb-3">					
+						<label for="text-center">Nome completo</label>
+						<input name="Nome" type="text" class="form-control" id="firstName" placeholder="" required>
+					</div>
+					<!-- FIM PRIMEIRO LINHA -->
+
+					<!-- INÍCIO SEGUNDA LINHA -->			
+					<div class="col-md-14 mb-3">
+						<label for="nickname">Email</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">@</span>
+							</div>		
+							<input name="Email" type="text" class="form-control" id="email" placeholder="meuemail@aquelelá.com" required>
+						</div>
+					</div>
+					<!-- FIM SEGUNDA LINHA -->
+
+
+					<!-- INÍCIO TERCEIRA LINHA -->
+					<div class="row">
+
+						<!-- PRIMEIRO BLOCO -->
+						<div class="col-md-3 mb-3">
+							<label for="cc-numero">Telefone</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">✆</span>
+								</div>
+								<input name="Telefone" type="text" class="form-control" id="cc-numero" placeholder="(46) 99943-2232" required>
+							</div>
+						</div>
+
+						<!-- SEGUNDO BLOCO -->	
+						<div class="col-md-3 mb-3">
+							<label for="sexo">Sexo ♂</label>
+							<select name="Sexo" class="custom-select d-block w-100" id="sexo" required>
+								<option value="">
+								Escolha...</option>
+								<option>Masculino</option>
+								<option>Feminino</option>
+							</select>
+						</div>
+
+						<!-- TERCEIRO BLOCO -->	
+						<div class="col-md-3 mb-3">
+							<label for="estado_civil">Estado civil</label>
+							<select name="EstadoCivil" class="custom-select d-block w-100" id="estado_civil" required>
+								<option value="">
+								Escolha...</option>
+								<option>Solteiro (a)</option>
+								<option>Casado (a)</option>
+								<option>União Estável</option>
+								<option>Separado (a)</option>
+								<option>Divorciado (a)</option>
+								<option>Viúvo (a)</option> 
+							</select>
+						</div>
+
+						<!-- QUARTO BLOCO -->					
+						<div class="col-md-3 mb-3">					
+							<label for="text-center">Data de Nascimento</label>
+							<input name="Nascimento" type="text" class="form-control" id="firstName" placeholder="03/03/2018" required>
+						</div>
+
+					</div>	
+					<!-- FIM TERCEIRA LINHA -->
+
+
+					<!-- INÍCIO QUARTA LINHA -->
+					<div class="row"> 
+
+						<!-- PRIMEIRO BLOCO -->
+						<div class="col-md-4 mb-3">
+							<label for="estado">Estado</label>
+							<select name="Estado" class="custom-select d-block w-100" id="estado" required>
+								<option value="">Escolha...</option>
+								<option>Acre</option>; <option>Alagoas</option>; <option>Amapá</option>; <option>Amazonas</option>; <option>Bahia</option>;
+								<option>Ceará</option>;  <option>Distrito Federal</option>;  <option>Espírito Santo</option>;  <option>Goiás</option>;
+								<option>Maranhão</option>; <option>Mato Grosso do Sul</option>; <option>Minas Gerais</option>; <option>Pará</option>;
+								<option>Paraíba</option>; <option>Paraná</option>; <option>Pernambuco</option>; <option>Piauí</option>; <option>Rio de Janeiro</option>;
+								<option>Rio Grande do Norte</option>; <option>Rio Grande do Sul</option>; <option>Rondônia</option>; <option>Roraima</option>
+								<option>Santa Catarina</option>; <option>São Paulo</option>; <option>Sergipe</option>; <option>Tocantins</option>
+							</select>
+						</div>
+
+						<!-- SEGUNDO BLOCO -->
+						<div class="col-md-5 mb-3">
+							<label for="endereco">Cidade</label>
+							<input name="Cidade" type="text" class="form-control" id="endereco" placeholder="Francisco Beltrão" required>
+						</div>
+
+						<!-- TERCEIRO BLOCO -->
+						<div class="col-md-3 mb-3">
+							<label for="cep">CEP</label>
+							<input name="CEP" type="text" class="form-control" id="cep" placeholder="856010-63" required>
+						</div>
+
+						<!-- QUARTO BLOCO -->
+						<div class="col-md-12 mb-5">
+							<label for="text-center">Endereço</label>
+							<input name="Endereco" type="text" class="form-control" id="endereco" placeholder="Rua Canarinhos, nº2084" required>
+						</div>
+
+
+					</div>
+					<!-- FIM QUARTA LINHA -->
+				</div>
+			</div>	
+
+
+			<div id="formacao_profissional" class="py-4 text-center align-items-center container">	
+				<h4>formação profissional </h4>
+				<div class="popup" onclick="myPopup2()"><strong style="font-size: 25px"> + </strong><span class="popuptext" id="myPopup2"> 
+					<small>
+					Preencha os campos abaixo com a sua formação escolar ou graduação</small>
+				</span>
+			</div>
+
+			<hr> 
+
+			<!-- INÍCIO PRIMEIRA LINHA -->
+			<div class="row"> 
+
+				<!-- PRIMEIRO BLOCO -->
+				<div class="col-md-6 mb-3">	
+					<label for="text-center">Curso</label>
+					<input name="Curso1" type="text" class="form-control" id="Formação" placeholder="Ensino médio completo / Administração" required>
+				</div>
+
+				<!-- SEGUNDO BLOCO -->			
+				<div class="col-md-6 mb-3">
+					<label for="endereco">Instituição</label>
+					<input name="Instituicao1" type="text" class="form-control" id="instituição" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade" required>
+				</div>
+
+			</div>
+			<!-- FIM PRIMEIRA LINHA -->		
+
+			<!-- INÍCIO SEGUNDA LINHA -->
+			<div class="row"> 	
+
+				<!-- PRIMEIRO BLOCO -->
+				<div class="col-md-4 mb-3">	
+					<label for="text-center">Ano Inicial</label>
+					<input name="AnoInicial1" type="text" class="form-control" id="Formação" placeholder="08/07/2012" required>
+				</div>
+
+				<!-- SEGUNDO BLOCO -->
+				<div class="col-md-4 mb-3">
+					<label for="cep">Conclusão</label>
+					<select name="Conclusao1" class="custom-select d-block w-100" id="conclusão" required>
+						<option value="">Escolha...</option>
+						<option>Concluído em:</option>
+						<option>Será concluído em:</option>
+					</select>
+				</div>
+
+				<!-- SEGUNDO BLOCO -->					
+				<div class="col-md-4 mb-3">
+					<label for="endereco">Ano Final</label>
+					<input name="AnoFinal1" type="text" class="form-control" id="ano" required>
+				</div>
+
+			</div>
+			<!-- FIM SEGUNDA LINHA -->
+
+			<!-- TERCEIRA LINHA -->	
+			<div class="col-md-14 mb-5">
+				<label for="endereco">Qualificações</label>
+				<textarea name="Qualificacoes1" class="form-control" rows="3" id="experiencia1Atividades" placeholder="- Curso completo de inglês na empresa SpeakEnglish 
+				- Curso de violão completo" required>
+
+			</textarea>
+		</div>
+	</div>
+
+
+	<div id="experiencia_profissinal" class="py-4 text-center align-items-center">	
+		<div class="container">
+			<h4>experiência profissional </h4>
+			<div class="popup" onclick="myPopup3()"><strong style="font-size: 25px"> + </strong><span class="popuptext" id="myPopup3"> <small>
+			Se você já possui experiência de trabalho, preencha os campos abaixo e dê um "up" no seu currículo</small>
+		</span>
+	</div>
+
+	<hr> 
+
+
+	<!-- PRIMEIRA LINHA -->
+	<div class="col-md-14 mb-3">
+		<label for="text-center">Empresa</label>
+		<input name="Empresa1" type="text" class="form-control" id="Formação" placeholder="Google">
+	</div>
+
+	<!-- INÍCIO SEGUNDA LINHA -->
+	<div class="row">
+
+		<!-- PRIMEIRO BLOCO -->						
+		<div class="col-md-6 mb-3">
+			<label for="Funcao">Função</label>
+			<input name="Funcao1" type="text" class="form-control" id="instituição" placeholder="Limpeza de sofás">
+		</div>
+
+		<!-- SEGUNDO BLOCO -->	
+		<div class="col-md-3 mb-3">
+			<label for="endereco">Data de entrada</label>
+			<input name="DataEntrada1" type="text" class="form-control" id="instituição" placeholder="01/08/2017">
+		</div>
+
+		<!-- TERCEIRO BLOCO -->
+		<div class="col-md-3 mb-3">
+			<label for="endereco">Data de saída</label>
+			<input name="DataSaida1" type="text" class="form-control" id="instituição" placeholder="03/05/2017">
+		</div>
+
+	</div>
 	<!-- FIM SEGUNDA LINHA -->
 
+	<!-- TERCEIRA LINHA -->
+	<div class="col-md-14 mb-5">
+		<label for="endereco">Atividades realizadas</label>
+		<textarea id="impressão"name="AtividadesRealizadas1" class="form-control" rows="3" id="experiencia1Atividades" placeholder="Limpava todas as espécies de sofá" >
 
- 	<!-- INÍCIO TERCEIRA LINHA -->
- 		<div class="row">
+		</textarea>
+	</div>
 
- 		<!-- PRIMEIRO BLOCO -->
- 			<div class="col-md-3 mb-3">
- 			<label for="cc-numero">Telefone</label>
- 			<div class="input-group">
- 			<div class="input-group-prepend">
- 			<span class="input-group-text">✆</span></div>
- 			<input name="Telefone" type="text" class="form-control" id="cc-numero" placeholder="(46) 99943-2232" required></div></div>
- 			
- 		<!-- SEGUNDO BLOCO -->	
- 			<div class="col-md-3 mb-3">
- 			<label for="sexo">Sexo ♂</label>
- 			<select name="Sexo" class="custom-select d-block w-100" id="sexo" required>
- 			<option value="">
- 					Escolha...</option>
- 			<option>Masculino</option>
- 			<option>Feminino</option></select></div>
- 		
- 		<!-- TERCEIRO BLOCO -->	
- 			<div class="col-md-3 mb-3">
- 			<label for="estado_civil">Estado civil</label>
- 			<select name="EstadoCivil" class="custom-select d-block w-100" id="estado_civil" required>
- 			<option value="">
- 				Escolha...</option>
- 			<option>Solteiro (a)</option>
- 			<option>Casado (a)</option>
- 			<option>União Estável</option>
- 			<option>Separado (a)</option>
-			<option>Divorciado (a)</option>
- 			<option>Viúvo (a)</option> </select></div>
+</div>
+</div>
+</div>
+</form>
 
- 			<!-- QUARTO BLOCO -->					
-			<div class="col-md-3 mb-3">					
- 			<label for="text-center">Data de Nascimento</label>
- 			<input name="Nascimento" type="text" class="form-control" id="firstName" placeholder="03/03/2018" required></div>
 
- 		</div>	
- 	<!-- FIM TERCEIRA LINHA -->
- 			
+<!--<a href="#" onclick="HTMLtoPDF()">Download PDF</a>-->
 
- 	<!-- INÍCIO QUARTA LINHA -->
- 		<div class="row"> 
 
- 		<!-- PRIMEIRO BLOCO -->
- 			<div class="col-md-4 mb-3">
- 			<label for="estado">Estado</label>
- 			<select name="Estado" class="custom-select d-block w-100" id="estado" required>
- 			<option value="">Escolha...</option>
- 			<option>Acre</option>; <option>Alagoas</option>; <option>Amapá</option>; <option>Amazonas</option>; <option>Bahia</option>;
- 			<option>Ceará</option>;  <option>Distrito Federal</option>;  <option>Espírito Santo</option>;  <option>Goiás</option>;
- 			<option>Maranhão</option>; <option>Mato Grosso do Sul</option>; <option>Minas Gerais</option>; <option>Pará</option>;
- 			<option>Paraíba</option>; <option>Paraná</option>; <option>Pernambuco</option>; <option>Piauí</option>; <option>Rio de Janeiro</option>;
- 			<option>Rio Grande do Norte</option>; <option>Rio Grande do Sul</option>; <option>Rondônia</option>; <option>Roraima</option>
- 			<option>Santa Catarina</option>; <option>São Paulo</option>; <option>Sergipe</option>; <option>Tocantins</option></select></div>
- 							 							
- 		<!-- SEGUNDO BLOCO -->
- 			<div class="col-md-5 mb-3">
- 			<label for="endereco">Cidade</label>
- 			<input name="Cidade" type="text" class="form-control" id="endereco" placeholder="Francisco Beltrão" required></div>
- 						
- 		<!-- TERCEIRO BLOCO -->
- 			<div class="col-md-3 mb-3">
- 			<label for="cep">CEP</label>
- 			<input name="CEP" type="text" class="form-control" id="cep" placeholder="856010-63" required></div>
- 			
- 		<!-- QUARTO BLOCO -->
- 			<div class="col-md-12 mb-5">
- 			<label for="text-center">Endereço</label>
- 			<input name="Endereco" type="text" class="form-control" id="endereco" placeholder="Rua Canarinhos, nº2084" required></div>
 
- 		
- 		</div>
- 	<!-- FIM QUARTA LINHA -->
 
- 								
+<!-- these js files are used for making PDF -->
+<script src="jspdf/jspdf.js"></script>
+<script src="jspdf/jquery-2.1.3.js"></script>
+<script src="jspdf/pdfFromHTML.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#btn_dados_pessoais").click(function(){
+			$("#aparecer").fadeIn(3000);
+		});
+	});
+</script>
 
- 	</div></div>				
-<!--FIM DADOS PESSOAIS -->
 
 
-<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
 
 
-<!-- INÍCIO FORMAÇÃO PROFISSIONAL 1-->
- 	<div class="py-4 text-center align-items-center">	
- 	<div class="container">
- 			<h4>formação profissional <div class="popup" onclick="myPopup2()"> + <span class="popuptext" id="myPopup2"> <h5 style="font-size: 50%">
- 			Preencha os campos abaixo com a sua formação escolar ou graduação</h5></span></div></h4><hr> 
-		
-	<!-- INÍCIO PRIMEIRA LINHA -->
- 		<div class="row"> 
-
- 		<!-- PRIMEIRO BLOCO -->
- 			<div class="col-md-6 mb-3">	
- 			<label for="text-center">Curso</label>
- 			<input name="Curso1" type="text" class="form-control" id="Formação" placeholder="Ensino médio completo / Administração" required></div>
-
- 		<!-- SEGUNDO BLOCO -->			
- 			<div class="col-md-6 mb-3">
- 			<label for="endereco">Instituição</label>
- 			<input name="Instituicao1" type="text" class="form-control" id="instituição" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade" required></div>
- 			
- 		</div>
- 	<!-- FIM PRIMEIRA LINHA -->		
-
- 	<!-- INÍCIO SEGUNDA LINHA -->
- 		<div class="row"> 	
-
- 		<!-- PRIMEIRO BLOCO -->
- 			<div class="col-md-4 mb-3">	
- 			<label for="text-center">Ano Inicial</label>
- 			<input name="AnoInicial1" type="text" class="form-control" id="Formação" placeholder="08/07/2012" required></div>
-
-		<!-- SEGUNDO BLOCO -->
- 			<div class="col-md-4 mb-3">
- 			<label for="cep">Conclusão</label>
- 			<select name="Conclusao1" class="custom-select d-block w-100" id="conclusão" required>
- 			<option value="">Escolha...</option>
- 			<option>Concluído em:</option>
- 			<option>Será concluído em:</option></select></div>
- 			
- 		<!-- SEGUNDO BLOCO -->					
- 			<div class="col-md-4 mb-3">
- 			<label for="endereco">Ano Final</label>
- 			<input name="AnoFinal1" type="text" class="form-control" id="ano" required></div>
-
- 		</div>
- 	<!-- FIM SEGUNDA LINHA -->
- 			
- 	<!-- TERCEIRA LINHA -->	
- 			<div class="col-md-14 mb-5">
- 			<label for="endereco">Qualificações</label>
- 			<textarea name="Qualificacoes1" class="form-control" rows="3" id="experiencia1Atividades" placeholder="- Curso completo de inglês na empresa SpeakEnglish 
-- Curso de violão completo" required></textarea></div>
-
-	<!-- BOTÃO FORMAÇÃO PROFISSIONAL 2 -->
- 			<div class="col-md-14 mb-3">
- 			<button  type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="Mudarestado1formacao('formacaoprofissional2')" style="display: block">adicionar segunda formação</button></div>
-
-		</div></div>
-<!-- FIM FORMAÇÃO PROFISSIONAL 1-->
-
-
-<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
-
-<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
-
-
-<!-- INÍCIO FORMAÇÃO PROFISSIONAL 2 -->
- 	<div class="py-4 text-center align-items-center"  id="formacaoprofissional2"  style="display: none">	
- 	<div class="container"><hr> 
-		
-	<!-- INÍCIO PRIMEIRA LINHA -->
- 		<div class="row"> 
-
- 		<!-- PRIMEIRO BLOCO -->
- 			<div class="col-md-6 mb-3">	
- 			<label for="text-center">Curso</label>
- 			<input name="Curso2" type="text" class="form-control" id="Formação" placeholder="Ensino médio completo / Administração" required></div>
-
- 		<!-- SEGUNDO BLOCO -->			
- 			<div class="col-md-6 mb-3">
- 			<label for="endereco">Instituição</label>
- 			<input name="Instituicao2" type="text" class="form-control" id="instituição" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade" required></div>
- 			
- 		</div>
- 	<!-- FIM PRIMEIRA LINHA -->		
-
- 	<!-- INÍCIO SEGUNDA LINHA -->
- 		<div class="row"> 	
-
- 		<!-- PRIMEIRO BLOCO -->
- 			<div class="col-md-4 mb-3">	
- 			<label for="text-center">Ano Inicial</label>
- 			<input name="AnoInicial2" type="text" class="form-control" id="Formação" placeholder="08/07/2012" required></div>
-
-		<!-- SEGUNDO BLOCO -->
- 			<div class="col-md-4 mb-3">
- 			<label for="cep">Conclusão</label>
- 			<select name="Conclusao2" class="custom-select d-block w-100" id="conclusão" required>
- 			<option value="">Escolha...</option>
- 			<option>Concluído em:</option>
- 			<option>Será concluído em:</option></select></div>
- 			
- 		<!-- SEGUNDO BLOCO -->					
- 			<div class="col-md-4 mb-3">
- 			<label for="endereco">Ano Final</label>
- 			<input name="AnoFinal2" type="text" class="form-control" id="ano" required></div>
-
- 		</div>
- 	<!-- FIM SEGUNDA LINHA -->
- 			
- 	<!-- TERCEIRA LINHA -->	
- 			<div class="col-md-14 mb-5">
- 			<label for="endereco">Qualificações</label>
- 			<textarea name="Qualificacoes2" class="form-control" rows="3" id="experiencia1Atividades" placeholder="- Curso completo de inglês na empresa SpeakEnglish 
-- Curso de violão completo" required></textarea></div>
-
-	<!-- BOTÃO PARA REMOVER FORMAÇÃO PROFISSIONAL 2 -->
-			<div class="col-md-14 mb-3">
- 			<button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="Mudarestadoformacao('formacaoprofissional2')">remover segunda formação</button></div>
-
-	</div></div>
-<!-- FIM FORMAÇÃO PROFISSIONAL 2-->
-
-
-<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
-<!-- INÍCIO EXPERIÊNCIA PROFISSIONAL-->
-	<div class="py-4 text-center align-items-center">	
- 	<div class="container">
- 			<h4>experiência profissional <div class="popup" onclick="myPopup3()"> + <span class="popuptext" id="myPopup3"> <h5 style="font-size: 50%">
- 			Se você já possui experiência de trabalho, preencha os campos abaixo e dê um "up" no seu currículo</h5></span></div></h4><hr> 
-
-
- 	<!-- PRIMEIRA LINHA -->
-			<div class="col-md-14 mb-3">
- 			<label for="text-center">Empresa</label>
- 			<input name="Empresa1" type="text" class="form-control" id="Formação" placeholder="Google"></div>
- 		
- 	<!-- INÍCIO SEGUNDA LINHA -->
- 		<div class="row">
-
- 		<!-- PRIMEIRO BLOCO -->						
- 			<div class="col-md-6 mb-3">
- 			<label for="Funcao">Função</label>
- 			<input name="Funcao1" type="text" class="form-control" id="instituição" placeholder="Limpeza de sofás"></div>
- 		
- 		<!-- SEGUNDO BLOCO -->	
- 			<div class="col-md-3 mb-3">
- 			<label for="endereco">Data de entrada</label>
- 			<input name="DataEntrada1" type="text" class="form-control" id="instituição" placeholder="01/08/2017"></div>
- 									
- 		<!-- TERCEIRO BLOCO -->
- 			<div class="col-md-3 mb-3">
- 			<label for="endereco">Data de saída</label>
- 			<input name="DataSaida1" type="text" class="form-control" id="instituição" placeholder="03/05/2017"></div>
-
- 		</div>
- 	<!-- FIM SEGUNDA LINHA -->
-
- 	<!-- TERCEIRA LINHA -->
- 			<div class="col-md-14 mb-5">
- 			<label for="endereco">Atividades realizadas</label>
- 			<textarea name="AtividadesRealizadas1" class="form-control" rows="3" id="experiencia1Atividades" placeholder="Limpava todas as espécies de sofá" ></textarea></div>
- 	
- 	<!-- BOTÃO -->
- 	   		<div class="col-md-14 mb-3">
- 			<button  type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="Mudarestado1('experienciaprofissional2')" style="display: block">adicionar segunda experiência</button></div>
-
-	</div></div>	
- <!-- FIM EXPERIÊNCIA PROFISSIONAL -->
-
-
-<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
-
-
-
-<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
-
-<!-- INÍCIO EXPERIÊNCIA PROFISSIONAL 2 -->
-	<div class="py-4 text-center align-items-center" id="experienciaprofissional2"  style="display: none">	
- 	<div class="container"><hr> 
-
-
- 	<!-- PRIMEIRA LINHA -->
-			<div class="col-md-14 mb-3">
- 			<label for="text-center">Empresa</label>
- 			<input name="Empresa2" type="text" class="form-control" id="Formação" placeholder="Google"></div>
- 		
- 	<!-- INÍCIO SEGUNDA LINHA -->
- 			<div class="row">
-
- 		<!-- PRIMEIRO BLOCO -->						
- 			<div class="col-md-6 mb-3">
- 			<label for="endereco">Função</label>
- 			<input name="Funcao2" type="text" class="form-control" id="instituição" placeholder="Limpeza de sofás"></div>
- 		
- 		<!-- SEGUNDO BLOCO -->	
- 			<div class="col-md-3 mb-3">
- 			<label for="endereco">Data de entrada</label>
- 			<input name="DataEntrada2" type="text" class="form-control" id="instituição" placeholder="01/08/2017"></div>
- 									
- 		<!-- TERCEIRO BLOCO -->
- 			<div class="col-md-3 mb-3">
- 			<label for="endereco">Data de saída</label>
- 			<input name="DataSaida2" type="text" class="form-control" id="instituição" placeholder="03/05/2017"></div>
-
- 		</div>
- 	<!-- FIM SEGUNDA LINHA -->
-
- 	<!-- TERCEIRA LINHA -->
- 			<div class="col-md-14 mb-5">
- 			<label for="endereco">Atividades realizadas</label>
- 			<textarea name="AtividadesRealizadas2" class="form-control" rows="3" id="experiencia1Atividades" placeholder="Limpava todas as espécies de sofá" ></textarea></div>
- 			
- 	 <!-- BOTÃO -->
- 			<div class="col-md-14 mb-3">
- 			<button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="Mudarestado('experienciaprofissional2')">remover segunda experiencia</button></div>
-
- 	</div></div>
- <!-- FIM EXPERIÊNCIA PROFISSIONAL 2 -->
-
-
-<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
-
-<!-- BOTÕES DE CHAMADA DO PHP E LIMPEZA DOS DADOS -->	
-
- 	<div class="py-4 text-center align-items-center"><br>
- 	<div class="container">
- 		<div class="row">
-				<div class="col-md-6 mb-3">
-				<input type="submit" value="gerar currículo" class="btn btn-lg btn-block btn-primary"></div>
-			 	<div class="col-md-6 mb-3">
-				<input type="reset" value="limpar dados" class="btn btn-lg btn-block btn-outline-primary"></div></div>
-	</div></div>
-
-<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
-
-
-<!-- FIM DOS DADOS UTILIZADOS EM TODO O CÓDIGO ACIMA -->
- <br><br><br><hr>
- </form></form>					
-
-<div id="menosazul"><!-- Filtro para diminuir o azul das telas" --></div>
-<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
-
-
-<!-- 
-  --  SCRIPTS BASEADOS EM EXEMPLOS DOS SITES:
-  --
-  --  https://getbootstrap.com/docs/4.1/examples/
-  --  https://www.w3schools.com/js/default.asp
-  --
- -->
- 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
- 		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
- 		<script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
- 		<script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
- 		<script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/holder.min.js"></script>
- 		<script>
-   	    (function() {
-       	'use strict';
-      	window.addEventListener('load', function() {
-          var forms = document.getElementsByClassName('needs-validation');  
-          var validation = Array.prototype.filter.call(forms, function(form) {
-          	form.addEventListener('submit', function(event) {
-          		if (form.checkValidity() === false) {
-          			event.preventDefault();
-          			event.stopPropagation();
-          		}
-          		form.classList.add('was-validated');
-    		      	}, false);
- 		         });
-   			   }, false);
-     		 })();
-  		</script>
-  		<script>
-  		function myPopup() {
-  		var popup = document.getElementById("myPopup");
-  		popup.classList.toggle("show");
-  		}
-  		function myPopup2() {
-  		var popup = document.getElementById("myPopup2");
-  		popup.classList.toggle("show");
-  		}
-  		function myPopup3() {
-  		var popup = document.getElementById("myPopup3");
-  		popup.classList.toggle("show");
-  		}
-  		</script>
-  		<script>
-  		function Mudarestadoformacao(el) {
-  		var display = document.getElementById(el).style.display;
-  		if(display == "none")
-  			document.getElementById(el).style.display = 'block';
-  		else
-  			document.getElementById(el).style.display = 'none';
- 	 	}
- 		 </script>
- 		  <script>
- 	 	function Mudarestado1formacao(el) {
-  		var display = document.getElementById(el).style.display;
-  		if(display == "none")
-  			document.getElementById(el).style.display = 'block';
-  		else
-  			document.getElementById(el).style.display = 'block';
- 	 	}
-  		</script>
-
-  		<script>
-  		function Mudarestado(el) {
-  		var display = document.getElementById(el).style.display;
-  		if(display == "none")
-  			document.getElementById(el).style.display = 'block';
-  		else
-  			document.getElementById(el).style.display = 'none';
- 	 	}
- 		 </script>
- 		  <script>
- 	 	function Mudarestado1(el) {
-  		var display = document.getElementById(el).style.display;
-  		if(display == "none")
-  			document.getElementById(el).style.display = 'block';
-  		else
-  			document.getElementById(el).style.display = 'block';
- 	 	}
-  		</script>
-
-  		
-
-
-
-
-<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
-
-
+<script>
+	function myPopup() {
+		var popup = document.getElementById("myPopup");
+		popup.classList.toggle("show");
+	}
+	function myPopup2() {
+		var popup = document.getElementById("myPopup2");
+		popup.classList.toggle("show");
+	}
+	function myPopup3() {
+		var popup = document.getElementById("myPopup3");
+		popup.classList.toggle("show");
+	}
+</script>
 </body>
 </html>
