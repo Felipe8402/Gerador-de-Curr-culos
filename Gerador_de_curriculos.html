@@ -61,11 +61,8 @@
 	<button style="border: 0; background: transparent;" id="btn_dados_pessoais" class="py-4 container text-center d-block">
 		<img src="img/icons8-divisa-circulada-à-abaixo-80.png">
 	</button><br><br>
-
-
-
-	<form name="form" action="gerador.php" method="get" id="aparecer" style="display: none">
-
+	
+	<form id="aparecer" style="display: none">v
 		<div id="">
 			<div class="py-4 text-center align-items-center">
 				<div class="container">
@@ -87,7 +84,11 @@
 					<!-- PRIMEIRA LINHA -->
 					<div class="col-md-14 mb-3">
 						<label for="text-center">Nome completo</label>
+<<<<<<< HEAD
 						<input name="nome" id="nome" type="text" class="form-control" placeholder="Joãozinho da Silva">
+=======
+						<input name="nome" id="nome" type="text" class="form-control"  placeholder="Joãozinho da Silva" required>
+>>>>>>> parent of fae418a... 6.3.3
 					</div>
 
 
@@ -97,8 +98,13 @@
 						<div class="input-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text">@</span>
+<<<<<<< HEAD
 							</div>
 							<input name="email" id="email" type="text" class="form-control" placeholder="meuemail@aquelelá.com">
+=======
+							</div>		
+							<input name="email" id="email" type="text" class="form-control" placeholder="meuemail@aquelelá.com" required>
+>>>>>>> parent of fae418a... 6.3.3
 						</div>
 					</div>
 
@@ -113,10 +119,11 @@
 								<div class="input-group-prepend">
 									<span class="input-group-text">✆</span>
 								</div>
-								<input id="telefone" name="telefone" type="text" class="form-control" placeholder="(46) 99943-2232">
+								<input id="telefone" name="Telefone" type="text" class="form-control" placeholder="(46) 99943-2232" required>
 							</div>
 						</div>
 
+<<<<<<< HEAD
 						<!-- SEGUNDO BLOCO -->
 
 						<form name="formulario1" action="#">
@@ -148,6 +155,77 @@
 								<input id="idade" name="idade" type="text" class="form-control" placeholder="(anos)">
 							</div>
 
+=======
+						<!-- SEGUNDO BLOCO -->	
+						<div class="col-md-3 mb-3">
+							<label for="sexo">Sexo ♂</label>
+							<select id="sexo" name="sexo" class="custom-select d-block w-100" required>
+								<option value="">
+								Escolha...</option>
+								<option>Masculino</option>
+								<option>Feminino</option>
+							</select>
+						</div>
+
+						<!-- TERCEIRO BLOCO -->	
+						<div class="col-md-3 mb-3">
+							<label for="estado_civil">Estado civil</label>
+							<select id="estado_civil" name="estado_civil" class="custom-select d-block w-100" required>
+								<option value="">
+								Escolha...</option>
+								<option>Solteiro (a)</option>
+								<option>Casado (a)</option>
+								<option>União Estável</option>
+								<option>Separado (a)</option>
+								<option>Divorciado (a)</option>
+								<option>Viúvo (a)</option> 
+							</select>
+						</div>
+
+						<!-- QUARTO BLOCO -->					
+						<div class="col-md-3 mb-3">					
+							<label for="text-center">Data de Nascimento</label>
+							<input id="nascimento" name="nascimento" type="text" class="form-control" placeholder="03/03/2018" required>
+						</div>
+
+					</div>	
+					<!-- FIM TERCEIRA LINHA -->
+
+
+					<!-- INÍCIO QUARTA LINHA -->
+					<div class="row"> 
+
+						<!-- PRIMEIRO BLOCO -->
+						<div class="col-md-4 mb-3">
+							<label for="estado">Estado</label>
+							<select id="estado" name="estado" class="custom-select d-block w-100" required>
+								<option value="">Escolha...</option>
+								<option>Acre</option>; <option>Alagoas</option>; <option>Amapá</option>; <option>Amazonas</option>; <option>Bahia</option>;
+								<option>Ceará</option>;  <option>Distrito Federal</option>;  <option>Espírito Santo</option>;  <option>Goiás</option>;
+								<option>Maranhão</option>; <option>Mato Grosso do Sul</option>; <option>Minas Gerais</option>; <option>Pará</option>;
+								<option>Paraíba</option>; <option>Paraná</option>; <option>Pernambuco</option>; <option>Piauí</option>; <option>Rio de Janeiro</option>;
+								<option>Rio Grande do Norte</option>; <option>Rio Grande do Sul</option>; <option>Rondônia</option>; <option>Roraima</option>
+								<option>Santa Catarina</option>; <option>São Paulo</option>; <option>Sergipe</option>; <option>Tocantins</option>
+							</select>
+						</div>
+
+						<!-- SEGUNDO BLOCO -->
+						<div class="col-md-5 mb-3">
+							<label for="endereco">Cidade</label>
+							<input id="cidade" name="cidade" type="text" class="form-control" placeholder="Francisco Beltrão" required>
+						</div>
+
+						<!-- TERCEIRO BLOCO -->
+						<div class="col-md-3 mb-3">
+							<label for="cep">CEP</label>
+							<input id="cep" name="cep" type="text" class="form-control" placeholder="856010-63" required>
+						</div>
+
+						<!-- QUARTO BLOCO -->
+						<div class="col-md-12 mb-5">
+							<label for="text-center">Endereço</label>
+							<input name="Endereco" type="text" class="form-control" id="endereco" placeholder="Rua Canarinhos, nº2084" required>
+>>>>>>> parent of fae418a... 6.3.3
 						</div>
 						<!-- FIM TERCEIRA LINHA -->
 
@@ -194,18 +272,29 @@
 				</div>
 
 
+<<<<<<< HEAD
 				<div id="formacao_profissional" class="py-4 text-center align-items-center container">
 					<h4>formação profissional </h4>
 					<div class="popup" onclick="myPopup2()"><strong style="font-size: 25px"> + </strong><span class="popuptext" id="myPopup2"> 
 						<small>Preencha os campos abaixo com a sua formação escolar ou graduação</small>
 					</span>
 				</div>
+=======
+			<div id="formacao_profissional" class="py-4 text-center align-items-center container">	
+				<h4>formação profissional </h4>
+				<div class="popup" onclick="myPopup2()"><strong style="font-size: 25px"> + </strong><span class="popuptext" id="myPopup2"> 
+					<small>
+					Preencha os campos abaixo com a sua formação escolar ou graduação</small>
+				</span>
+			</div>
+>>>>>>> parent of fae418a... 6.3.3
 
 				<hr>
 
 				<!-- INÍCIO PRIMEIRA LINHA -->
 				<div class="row">
 
+<<<<<<< HEAD
 					<!-- PRIMEIRO BLOCO -->
 					<div class="col-md-6 mb-3">
 						<label for="text-center">Curso</label>
@@ -218,6 +307,18 @@
 						<input name="instituicao" type="text" class="form-control" id="instituicao" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade">
 					</div>
 
+=======
+				<!-- PRIMEIRO BLOCO -->
+				<div class="col-md-6 mb-3">	
+					<label for="text-center">Curso</label>
+					<input name="Curso1" type="text" class="form-control" id="Formação" placeholder="Ensino médio completo / Administração" required>
+				</div>
+
+				<!-- SEGUNDO BLOCO -->			
+				<div class="col-md-6 mb-3">
+					<label for="endereco">Instituição</label>
+					<input name="Instituicao1" type="text" class="form-control" id="instituição" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade" required>
+>>>>>>> parent of fae418a... 6.3.3
 				</div>
 				<!-- FIM PRIMEIRA LINHA -->
 
@@ -230,6 +331,7 @@
 						<input name="anoinicial" type="text" class="form-control" id="anoinicial" placeholder="08/07/2012">
 					</div>
 
+<<<<<<< HEAD
 					<!-- SEGUNDO BLOCO -->
 					<div class="col-md-4 mb-3">
 						<label for="cep">Conclusão</label>
@@ -246,6 +348,28 @@
 						<input name="anofinal" type="text" class="form-control" id="anofinal">
 					</div>
 
+=======
+				<!-- PRIMEIRO BLOCO -->
+				<div class="col-md-4 mb-3">	
+					<label for="text-center">Ano Inicial</label>
+					<input name="AnoInicial1" type="text" class="form-control" id="Formação" placeholder="08/07/2012" required>
+				</div>
+
+				<!-- SEGUNDO BLOCO -->
+				<div class="col-md-4 mb-3">
+					<label for="cep">Conclusão</label>
+					<select name="Conclusao1" class="custom-select d-block w-100" id="conclusão" required>
+						<option value="">Escolha...</option>
+						<option>Concluído em:</option>
+						<option>Será concluído em:</option>
+					</select>
+				</div>
+
+				<!-- SEGUNDO BLOCO -->					
+				<div class="col-md-4 mb-3">
+					<label for="endereco">Ano Final</label>
+					<input name="AnoFinal1" type="text" class="form-control" id="ano" required>
+>>>>>>> parent of fae418a... 6.3.3
 				</div>
 				<!-- FIM SEGUNDA LINHA -->
 
@@ -256,6 +380,7 @@
 				</div>
 			</div>
 
+<<<<<<< HEAD
 
 			<div id="experiencia_profissinal" class="py-4 text-center align-items-center">
 				<div class="container">
@@ -309,10 +434,72 @@
 	</div>
 </div>
 </div>
+=======
+			<!-- TERCEIRA LINHA -->	
+			<div class="col-md-14 mb-5">
+				<label for="endereco">Qualificações</label>
+				<textarea name="Qualificacoes1" class="form-control" rows="3" id="experiencia1Atividades" placeholder="- Curso completo de inglês na empresa SpeakEnglish 
+				- Curso de violão completo" required>
+
+			</textarea>
+		</div>
+	</div>
 
 
+	<div id="experiencia_profissinal" class="py-4 text-center align-items-center">	
+		<div class="container">
+			<h4>experiência profissional </h4>
+			<div class="popup" onclick="myPopup3()"><strong style="font-size: 25px"> + </strong><span class="popuptext" id="myPopup3"> <small>
+			Se você já possui experiência de trabalho, preencha os campos abaixo e dê um "up" no seu currículo</small>
+		</span>
+	</div>
+
+	<hr> 
 
 
+	<!-- PRIMEIRA LINHA -->
+	<div class="col-md-14 mb-3">
+		<label for="text-center">Empresa</label>
+		<input name="Empresa1" type="text" class="form-control" id="Formação" placeholder="Google">
+	</div>
+
+	<!-- INÍCIO SEGUNDA LINHA -->
+	<div class="row">
+
+		<!-- PRIMEIRO BLOCO -->						
+		<div class="col-md-6 mb-3">
+			<label for="Funcao">Função</label>
+			<input name="Funcao1" type="text" class="form-control" id="instituição" placeholder="Limpeza de sofás">
+		</div>
+
+		<!-- SEGUNDO BLOCO -->	
+		<div class="col-md-3 mb-3">
+			<label for="endereco">Data de entrada</label>
+			<input name="DataEntrada1" type="text" class="form-control" id="instituição" placeholder="01/08/2017">
+		</div>
+
+		<!-- TERCEIRO BLOCO -->
+		<div class="col-md-3 mb-3">
+			<label for="endereco">Data de saída</label>
+			<input name="DataSaida1" type="text" class="form-control" id="instituição" placeholder="03/05/2017">
+		</div>
+>>>>>>> parent of fae418a... 6.3.3
+
+	</div>
+	<!-- FIM SEGUNDA LINHA -->
+
+	<!-- TERCEIRA LINHA -->
+	<div class="col-md-14 mb-5">
+		<label for="endereco">Atividades realizadas</label>
+		<textarea id="impressão"name="AtividadesRealizadas1" class="form-control" rows="3" id="experiencia1Atividades" placeholder="Limpava todas as espécies de sofá" >
+
+		</textarea>
+	</div>
+
+</div>
+</div>
+</div>
+</form>
 
 
 
