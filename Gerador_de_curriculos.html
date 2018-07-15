@@ -1,32 +1,38 @@
 <!doctype html>
-<html lang="pt-BR">  
-<head> 
-	<meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-	<link rel="stylesheet" 
-	href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" 
-	integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" 
-	crossorigin="anonymous">
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://getbootstrap.com/docs/4.1/examples/checkout/form-validation.css">
-	<link rel="icon" href="img\icone_da_aba.png"> <title>Currículo</title>
+	<link rel="icon" href="img\icone_da_aba.png">
+	<title>Currículo</title>
 	<link rel="stylesheet" type="text/css" href="css/modelos.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 	<style type="text/css">
 	.icone {
-		width:40px; 
-		height:40px;
+		width: 40px;
+		height: 40px;
 	}
-	body { background-image:url('img/l6.png'); }
-	button:focus {outline:none;} /* remove a borda ao clicar no link*/
+
+	body {
+		background-image: url('img/l6.png');
+	}
+
+	button:focus {
+		outline: none;
+	}
+	/* remove a borda ao clicar no link*/
 </style>
 
 
 
-</head> 
+</head>
 
 <!--==--==--==--==--==--==--==--==--==--==--==--==--==--==-->
 
-<body>  
+<body>
 	<div class="container text-center">
 		<h1 class="py-4">crie o seu currículo<br>com a sua cara</h1><br>
 		<div id="imagens" class="row mb-5 center">
@@ -38,15 +44,15 @@
 			<img class="d-block icone mx-auto" src="img\gravata.png">
 		</div>
 		<p class="lead mb-5">
-			o mercado atual exige um profissional com experiência, dedicação e formação em diversas áreas 	
+			o mercado atual exige um profissional com experiência, dedicação e formação em diversas áreas
 			<br>para que isso seja apresentado ao contratante, é necessário um currículo que represente quem você é
 		</p>
-		<h4> 
+		<h4>
 			<small>
 				- este site foi idealizado utilizando a simplicidade e a facilidade <br>para criar um documento tão importante - 
 			</small>
-		</h4> 
-	</div> 
+		</h4>
+	</div>
 
 
 	<!--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--===--==--==--==--==--==--==--==-->
@@ -61,7 +67,7 @@
 	<form name="form" action="gerador.php" method="get" id="aparecer" style="display: none">
 
 		<div id="">
-			<div class="py-4 text-center align-items-center">	
+			<div class="py-4 text-center align-items-center">
 				<div class="container">
 					<h4>dados pessoais
 					</h4>
@@ -76,22 +82,22 @@
 
 
 
-				<div class="container text-center" >
-					<hr> 
-					<!-- PRIMEIRA LINHA -->		
-					<div class="col-md-14 mb-3">					
+				<div class="container text-center">
+					<hr>
+					<!-- PRIMEIRA LINHA -->
+					<div class="col-md-14 mb-3">
 						<label for="text-center">Nome completo</label>
-						<input name="nome" id="nome" type="text" class="form-control"  placeholder="Joãozinho da Silva">
+						<input name="nome" id="nome" type="text" class="form-control" placeholder="Joãozinho da Silva">
 					</div>
 
 
-					<!-- SEGUNDA LINHA -->			
+					<!-- SEGUNDA LINHA -->
 					<div class="col-md-14 mb-3">
 						<label for="nickname">Email</label>
 						<div class="input-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text">@</span>
-							</div>		
+							</div>
 							<input name="email" id="email" type="text" class="form-control" placeholder="meuemail@aquelelá.com">
 						</div>
 					</div>
@@ -111,198 +117,196 @@
 							</div>
 						</div>
 
-						<!-- SEGUNDO BLOCO -->	
-						<div class="col-md-3 mb-3">
-							<label>Sexo ♂</label>
-							<select id="sexo" name="sexo" class="custom-select d-block w-100">
-								<option value="">
-								Escolha...</option>
-								<option>Masculino</option>
-								<option>Feminino</option>
-							</select>
-						</div>
-
-						<!-- TERCEIRO BLOCO -->	
-						<div class="col-md-3 mb-3">
-							<label for="estado_civil">Estado civil</label>
-							<select id="estado_civil" name="estado_civil" class="custom-select d-block w-100">
-								<option value="">
-								Escolha...</option>
-								<option>Solteiro (a)</option>
-								<option>Casado (a)</option>
-								<option>União Estável</option>
-								<option>Separado (a)</option>
-								<option>Divorciado (a)</option>
-								<option>Viúvo (a)</option> 
-							</select>
-						</div>
-
-						<!-- QUARTO BLOCO -->					
-						<div class="col-md-3 mb-3">					
-							<label for="text-center">Data de Nascimento</label>
-							<input id="nascimento" name="nascimento" type="text" class="form-control" placeholder="03/03/2018">
-						</div>
-
-					</div>	
-					<!-- FIM TERCEIRA LINHA -->
-
-
-					<!-- INÍCIO QUARTA LINHA -->
-					<div class="row"> 
-
-						<!-- PRIMEIRO BLOCO -->
-						<div class="col-md-4 mb-3">
-							<label for="estado">Estado</label>
-							<select id="estado" name="estado" class="custom-select d-block w-100">
-								<option value="">Escolha...</option>
-								<option>Acre</option>; <option>Alagoas</option>; <option>Amapá</option>; <option>Amazonas</option>; <option>Bahia</option>;
-								<option>Ceará</option>;  <option>Distrito Federal</option>;  <option>Espírito Santo</option>;  <option>Goiás</option>;
-								<option>Maranhão</option>; <option>Mato Grosso do Sul</option>; <option>Minas Gerais</option>; <option>Pará</option>;
-								<option>Paraíba</option>; <option>Paraná</option>; <option>Pernambuco</option>; <option>Piauí</option>; <option>Rio de Janeiro</option>;
-								<option>Rio Grande do Norte</option>; <option>Rio Grande do Sul</option>; <option>Rondônia</option>; <option>Roraima</option>
-								<option>Santa Catarina</option>; <option>São Paulo</option>; <option>Sergipe</option>; <option>Tocantins</option>
-							</select>
-						</div>
-
 						<!-- SEGUNDO BLOCO -->
-						<div class="col-md-5 mb-3">
-							<label for="endereco">Cidade</label>
-							<input id="cidade" name="cidade" type="text" class="form-control" placeholder="Francisco Beltrão">
+
+						<form name="formulario1" action="#">
+
+							<div class="col-md-3 mb-3">
+								<label>Sexo ♂</label>
+								<select id="sexo" name="sexo" class="custom-select d-block w-100" onchange="mudar(estado_civil)">
+									<option value="0">
+									Escolha...</option>
+									<option value="1">Masculino</option>
+									<option value="2">Feminino</option>
+								</select>
+							</div>
+
+
+							<!-- TERCEIRO BLOCO -->
+							<div class="col-md-3 mb-3">
+								<label for="estado_civil">Estado civil</label>
+								<select id="estado_civil" name="estado_civil" class="custom-select d-block w-100">
+									<option value="-">-
+									</select>
+								</div>
+							</form>
+
+
+							<!-- QUARTO BLOCO -->
+							<div class="col-md-3 mb-3 ">
+								<label for="text-center ">Idade</label>
+								<input id="idade" name="idade" type="text" class="form-control" placeholder="(anos)">
+							</div>
+
 						</div>
+						<!-- FIM TERCEIRA LINHA -->
 
-						<!-- TERCEIRO BLOCO -->
-						<div class="col-md-3 mb-3">
-							<label for="cep">CEP</label>
-							<input id="cep" name="cep" type="text" class="form-control" placeholder="856010-63">
+
+						<!-- INÍCIO QUARTA LINHA -->
+						<div class="row">
+
+							<!-- PRIMEIRO BLOCO -->
+							<div class="col-md-4 mb-3">
+								<label for="estado">Estado</label>
+								<select id="estado" name="estado" class="custom-select d-block w-100">
+									<option value=" ">Escolha...</option>
+									<option>Acre</option>; <option>Alagoas</option>; <option>Amapá</option>; <option>Amazonas</option>; <option>Bahia</option>;
+									<option>Ceará</option>;  <option>Distrito Federal</option>;  <option>Espírito Santo</option>;  <option>Goiás</option>;
+									<option>Maranhão</option>; <option>Mato Grosso do Sul</option>; <option>Minas Gerais</option>; <option>Pará</option>;
+									<option>Paraíba</option>; <option>Paraná</option>; <option>Pernambuco</option>; <option>Piauí</option>; <option>Rio de Janeiro</option>;
+									<option>Rio Grande do Norte</option>; <option>Rio Grande do Sul</option>; <option>Rondônia</option>; <option>Roraima</option>
+									<option>Santa Catarina</option>; <option>São Paulo</option>; <option>Sergipe</option>; <option>Tocantins</option>
+								</select>
+							</div>
+
+							<!-- SEGUNDO BLOCO -->
+							<div class="col-md-5 mb-3">
+								<label for="endereco">Cidade</label>
+								<input id="cidade" name="cidade" type="text" class="form-control" placeholder="Francisco Beltrão">
+							</div>
+
+							<!-- TERCEIRO BLOCO -->
+							<div class="col-md-3 mb-3">
+								<label for="cep">CEP</label>
+								<input id="cep" name="cep" type="text" class="form-control" placeholder="856010-63">
+							</div>
+
+							<!-- QUARTO BLOCO -->
+							<div class="col-md-12 mb-5">
+								<label for="text-center">Endereço</label>
+								<input name="endereco" type="text" class="form-control" id="endereco" placeholder="Rua Canarinhos, nº2084">
+							</div>
+
+
 						</div>
-
-						<!-- QUARTO BLOCO -->
-						<div class="col-md-12 mb-5">
-							<label for="text-center">Endereço</label>
-							<input name="endereco" type="text" class="form-control" id="endereco" placeholder="Rua Canarinhos, nº2084">
-						</div>
-
-
+						<!-- FIM QUARTA LINHA -->
 					</div>
-					<!-- FIM QUARTA LINHA -->
 				</div>
-			</div>	
 
 
-			<div id="formacao_profissional" class="py-4 text-center align-items-center container">	
-				<h4>formação profissional </h4>
-				<div class="popup" onclick="myPopup2()"><strong style="font-size: 25px"> + </strong><span class="popuptext" id="myPopup2"> 
-					<small>Preencha os campos abaixo com a sua formação escolar ou graduação</small>
+				<div id="formacao_profissional" class="py-4 text-center align-items-center container">
+					<h4>formação profissional </h4>
+					<div class="popup" onclick="myPopup2()"><strong style="font-size: 25px"> + </strong><span class="popuptext" id="myPopup2"> 
+						<small>Preencha os campos abaixo com a sua formação escolar ou graduação</small>
+					</span>
+				</div>
+
+				<hr>
+
+				<!-- INÍCIO PRIMEIRA LINHA -->
+				<div class="row">
+
+					<!-- PRIMEIRO BLOCO -->
+					<div class="col-md-6 mb-3">
+						<label for="text-center">Curso</label>
+						<input name="cursos" type="text" class="form-control" id="cursos" placeholder="Ensino médio completo / Administração">
+					</div>
+
+					<!-- SEGUNDO BLOCO -->
+					<div class="col-md-6 mb-3">
+						<label>Instituição</label>
+						<input name="instituicao" type="text" class="form-control" id="instituicao" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade">
+					</div>
+
+				</div>
+				<!-- FIM PRIMEIRA LINHA -->
+
+				<!-- INÍCIO SEGUNDA LINHA -->
+				<div class="row">
+
+					<!-- PRIMEIRO BLOCO -->
+					<div class="col-md-4 mb-3">
+						<label for="text-center">Ano Inicial</label>
+						<input name="anoinicial" type="text" class="form-control" id="anoinicial" placeholder="08/07/2012">
+					</div>
+
+					<!-- SEGUNDO BLOCO -->
+					<div class="col-md-4 mb-3">
+						<label for="cep">Conclusão</label>
+						<select name="conclusao" class="custom-select d-block w-100" id="conclusao">
+							<option value="">Escolha...</option>
+							<option>Concluído em:</option>
+							<option>Será concluído em:</option>
+						</select>
+					</div>
+
+					<!-- SEGUNDO BLOCO -->
+					<div class="col-md-4 mb-3">
+						<label for="endereco">Ano Final</label>
+						<input name="anofinal" type="text" class="form-control" id="anofinal">
+					</div>
+
+				</div>
+				<!-- FIM SEGUNDA LINHA -->
+
+				<!-- TERCEIRA LINHA -->
+				<div class="col-md-14 mb-5">
+					<label for="endereco">Qualificações</label>
+					<textarea name="qualificacoes" class="form-control" rows="3" id="qualificacoes" placeholder="- Curso completo de inglês na empresa SpeakEnglish"></textarea>
+				</div>
+			</div>
+
+
+			<div id="experiencia_profissinal" class="py-4 text-center align-items-center">
+				<div class="container">
+					<h4>experiência profissional </h4>
+					<div class="popup" onclick="myPopup3()"><strong style="font-size: 25px"> + </strong><span class="popuptext " id="myPopup3 "> <small>
+					Se você já possui experiência de trabalho, preencha os campos abaixo e dê um "up " no seu currículo</small>
 				</span>
 			</div>
 
-			<hr> 
+			<hr>
 
-			<!-- INÍCIO PRIMEIRA LINHA -->
-			<div class="row"> 
 
-				<!-- PRIMEIRO BLOCO -->
-				<div class="col-md-6 mb-3">	
-					<label for="text-center">Curso</label>
-					<input name="cursos" type="text" class="form-control" id="cursos" placeholder="Ensino médio completo / Administração">
-				</div>
-
-				<!-- SEGUNDO BLOCO -->			
-				<div class="col-md-6 mb-3">
-					<label>Instituição</label>
-					<input name="instituicao" type="text" class="form-control" id="instituicao" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade">
-				</div>
-
+			<!-- PRIMEIRA LINHA -->
+			<div class="col-md-14 mb-3 ">
+				<label for="text-center ">Empresa</label>
+				<input name="empresa " type="text " class="form-control " id="empresa " placeholder="Google ">
 			</div>
-			<!-- FIM PRIMEIRA LINHA -->		
 
 			<!-- INÍCIO SEGUNDA LINHA -->
-			<div class="row"> 	
+			<div class="row ">
 
 				<!-- PRIMEIRO BLOCO -->
-				<div class="col-md-4 mb-3">	
-					<label for="text-center">Ano Inicial</label>
-					<input name="anoinicial" type="text" class="form-control" id="anoinicial" placeholder="08/07/2012">
+				<div class="col-md-6 mb-3 ">
+					<label for="Funcao ">Função</label>
+					<input name="funcao " type="text " class="form-control " id="funcao " placeholder="Limpeza de sofás ">
 				</div>
 
 				<!-- SEGUNDO BLOCO -->
-				<div class="col-md-4 mb-3">
-					<label for="cep">Conclusão</label>
-					<select name="conclusao" class="custom-select d-block w-100" id="conclusao">
-						<option value="">Escolha...</option>
-						<option>Concluído em:</option>
-						<option>Será concluído em:</option>
-					</select>
+				<div class="col-md-3 mb-3 ">
+					<label for="endereco ">Data de entrada</label>
+					<input name="dataentrada " type="text " class="form-control " id="dataentrada " placeholder="01/08/2017 ">
 				</div>
 
-				<!-- SEGUNDO BLOCO -->					
-				<div class="col-md-4 mb-3">
-					<label for="endereco">Ano Final</label>
-					<input name="anofinal" type="text" class="form-control" id="anofinal">
+				<!-- TERCEIRO BLOCO -->
+				<div class="col-md-3 mb-3 ">
+					<label for="endereco ">Data de saída</label>
+					<input name="datasaida " type="text " class="form-control " id="datasaida " placeholder="03/05/2017 ">
 				</div>
 
 			</div>
 			<!-- FIM SEGUNDA LINHA -->
 
-			<!-- TERCEIRA LINHA -->	
-			<div class="col-md-14 mb-5">
-				<label for="endereco">Qualificações</label>
-				<textarea name="qualificacoes" class="form-control" rows="3" id="qualificacoes" placeholder="- Curso completo de inglês na empresa SpeakEnglish 
-				- Curso de violão completo"></textarea>
+			<!-- TERCEIRA LINHA -->
+			<div class="col-md-14 mb-5 ">
+				<label for="endereco ">Atividades desempenhadas</label>
+				<textarea id="atividades" name="atividades" class="form-control" rows="3 " placeholder="Limpava todas as espécies de sofá "></textarea>
 			</div>
-		</div>
+			<input type="submit" name="enviar" value="Clique aqui para gerar o PDF"/>
+		</form>
 
-
-		<div id="experiencia_profissinal" class="py-4 text-center align-items-center">	
-			<div class="container">
-				<h4>experiência profissional </h4>
-				<div class="popup" onclick="myPopup3()"><strong style="font-size: 25px"> + </strong><span class="popuptext" id="myPopup3"> <small>
-				Se você já possui experiência de trabalho, preencha os campos abaixo e dê um "up" no seu currículo</small>
-			</span>
-		</div>
-
-		<hr> 
-
-
-		<!-- PRIMEIRA LINHA -->
-		<div class="col-md-14 mb-3">
-			<label for="text-center">Empresa</label>
-			<input name="empresa" type="text" class="form-control" id="empresa" placeholder="Google">
-		</div>
-
-		<!-- INÍCIO SEGUNDA LINHA -->
-		<div class="row">
-
-			<!-- PRIMEIRO BLOCO -->						
-			<div class="col-md-6 mb-3">
-				<label for="Funcao">Função</label>
-				<input name="funcao" type="text" class="form-control" id="funcao" placeholder="Limpeza de sofás">
-			</div>
-
-			<!-- SEGUNDO BLOCO -->	
-			<div class="col-md-3 mb-3">
-				<label for="endereco">Data de entrada</label>
-				<input name="dataentrada" type="text" class="form-control" id="dataentrada" placeholder="01/08/2017">
-			</div>
-
-			<!-- TERCEIRO BLOCO -->
-			<div class="col-md-3 mb-3">
-				<label for="endereco">Data de saída</label>
-				<input name="datasaida" type="text" class="form-control" id="datasaida" placeholder="03/05/2017">
-			</div>
-
-		</div>
-		<!-- FIM SEGUNDA LINHA -->
-
-		<!-- TERCEIRA LINHA -->
-		<div class="col-md-14 mb-5">
-			<label for="endereco">Atividades desempenhadas</label>
-			<textarea id="atividades" name="atividades" class="form-control" rows="3" placeholder="Limpava todas as espécies de sofá" ></textarea>
-		</div>
-		<input type="submit" name="enviar" value="Clique aqui para gerar o PDF"/>
-	</form>
-
-</div>
+	</div>
 </div>
 </div>
 
@@ -324,39 +328,87 @@
 <!-- armazena os dados -->
 
 
-<!--ref="#" onclick="HTMLtoPDF()">Download PDF</a>
+    <!--ref="# " onclick="HTMLtoPDF() ">Download PDF</a>
 
 these js files are used for making PDF 
-<script src="js/modelos.js"></script>
-<script src="jspdf/jspdf.js"></script>
-<script src="jspdf/jquery-2.1.3.js"></script>
-<script src="jspdf/pdfFromHTML.js"></script> -->
+<script src="js/modelos.js "></script>
+<script src="jspdf/jspdf.js "></script>
+<script src="jspdf/jquery-2.1.3.js "></script>
+<script src="jspdf/pdfFromHTML.js "></script> -->
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-	$(document).ready(function(){
-		$("#btn_dados_pessoais").click(function(){
-			$("#aparecer").fadeIn(3000);
-		});
-	});
-</script>
+<script type="text/javascript">
+			//1) Definir Las Variables Correspondintes
+			var opt_1 = new Array ("Solteiro","Casado","União Estável","Separado","Divorciado","Viúvo");
+			var opt_2 = new Array ("Solteira","Casada","União Estável","Separada","Divorciada","Viúva");
+			// 2) crear una funcion que permita ejecutar el cambio dinamico
+			
+			function mudar(){
+				var estado_civil;
+				//Se toma el vamor de la "cosa seleccionada"
+				estado_civil = document.formulario1.sexo[document.formulario1.estado_civil.selectedIndex].value;
+				//se chequea si la "cosa" esta definida
+				if(estado_civil!=0){
+					//selecionamos las cosas Correctas
+					mis_opts=eval("opt_" + estado_civil);
+					//se calcula el numero de cosas
+					num_opts=mis_opts.length;
+					//marco el numero de opt en el select
+					document.formulario1.estado_civil.length = num_opts;
+					//para cada opt del array, la pongo en el select
+					for(i=0; i<num_opts; i++){
+						document.formulario1.estado_civil.options[i].value=mis_opts[i];
+						document.formulario1.estado_civil.options[i].text=mis_opts[i];
+					}
+				}else{
+						//si no habia ninguna opt seleccionada, elimino las cosas del select
+						document.formulario1.estado_civil.length = 1;
+						//ponemos un guion en la unica opt que he dejado
+						document.formulario1.estado_civil.options[0].value="-";
+						document.formulario1.estado_civil.options[0].text="-";
+					}
+					//hacer un reset de las opts
+					document.formulario1.estado_civil.options[0].selected = true;
+					
+				}
 
 
-<script>
-	function myPopup() {
-		var popup = document.getElementById("myPopup");
-		popup.classList.toggle("show");
-	}
-	function myPopup2() {
-		var popup = document.getElementById("myPopup2");
-		popup.classList.toggle("show");
-	}
-	function myPopup3() {
-		var popup = document.getElementById("myPopup3");
-		popup.classList.toggle("show");
-	}
-</script>
-</body>
-</html>
+
+			</script>
+
+
+
+
+		</script>
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+		<script>
+			$(document).ready(function() {
+				$("#btn_dados_pessoais ").click(function() {
+					$("#aparecer ").fadeIn(3000);
+				});
+			});
+		</script>
+
+		<script>
+			function myPopup() {
+				var popup = document.getElementById("myPopup ");
+				popup.classList.toggle("show ");
+			}
+
+			function myPopup2() {
+				var popup = document.getElementById("myPopup2 ");
+				popup.classList.toggle("show ");
+			}
+
+			function myPopup3() {
+				var popup = document.getElementById("myPopup3 ");
+				popup.classList.toggle("show ");
+			}
+		</script>
+	</body>
+
+	</html>
