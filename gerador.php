@@ -15,7 +15,7 @@ $femail= utf8_decode($_GET["email"]);
 $ftelefone= utf8_decode($_GET["telefone"]);
 $fsexo= utf8_decode($_GET["sexo"]);
 $festadocivil= utf8_decode($_GET["estado_civil"]);
-$fidade= utf8_decode($_GET["idade"]);
+$fnascimento= utf8_decode($_GET["nascimento"]);
 $festado= utf8_decode($_GET["estado"]);
 $fcidade= utf8_decode($_GET["cidade"]);
 $fcep= utf8_decode($_GET["cep"]);
@@ -37,11 +37,11 @@ $fatividadesrealizadas1 = utf8_decode($_GET["AtividadesRealizadas1"]);
 */
 
 $dompdf->loadHtml(
-	"<h1>".$fnome."</h1><hr>".$fidade." anos • ".$ftelefone."<br>".$femail."<br>"
+	"<h1>".$fnome."</h1>".$femail." • ".$ftelefone."<br>".$fnascimento." • ".$festadocivil
 );
 
 // (Optional) Setup the paper size and orientation
-$dompdf->setPaper('A4','landscape');
+$dompdf->setPaper('A4', 'landscape');
 
 // Render the HTML as PDF
 $dompdf->render();
