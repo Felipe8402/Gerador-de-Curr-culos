@@ -23,28 +23,28 @@ $fdatasaida1 = utf8_decode($_GET["DataSaida1"]);
 $fatividadesrealizadas1 = utf8_decode($_GET["AtividadesRealizadas1"]);
 */
 
-$fnome= utf8_decode($_POST["nome"]);
-$femail= utf8_decode($_POST["email"]);
-$ftelefone= utf8_decode($_POST["telefone"]);
-$fsexo= utf8_decode($_POST["sexo"]);
-$festadocivil= utf8_decode($_POST["estado_civil"]);
-$fnascimento= utf8_decode($_POST["nascimento"]);
-$festado= utf8_decode($_POST["estado"]);
-$fcidade= utf8_decode($_POST["cidade"]);
-$fcep= utf8_decode($_POST["cep"]);
-$fendereco= utf8_decode($_POST["endereco"]);
-$finstituicao = utf8_decode($_POST["instituicao"]);
-$fanoinicial = utf8_decode($_POST["anoinicial"]);
-$fconclusao = utf8_decode($_POST["conclusao"]);
-$fanofinal = utf8_decode($_POST["anofinal"]);
-$fqualificacoes = utf8_decode($_POST["qualificacoes"]);
-$fobjetivos = utf8_decode($_POST["objetivos"]);
-$fempresa = utf8_decode($_POST["empresa"]);
-$ffuncao = utf8_decode($_POST["funcao"]);
-$fdataentrada = utf8_decode($_POST["dataentrada"]);
-$fdatasaida = utf8_decode($_POST["datasaida"]);
-$fatividades = utf8_decode($_POST["atividades"]);
-$fcurso = utf8_decode($_POST["curso"]);
+$fnome= ($_POST["nome"]);
+$femail= ($_POST["email"]);
+$ftelefone= ($_POST["telefone"]);
+$fsexo= ($_POST["sexo"]);
+$festadocivil= ($_POST["estado_civil"]);
+$fnascimento= ($_POST["nascimento"]);
+$festado= ($_POST["estado"]);
+$fcidade= ($_POST["cidade"]);
+$fcep= ($_POST["cep"]);
+$fendereco= ($_POST["endereco"]);
+$finstituicao = ($_POST["instituicao"]);
+$fanoinicial = ($_POST["anoinicial"]);
+$fconclusao = ($_POST["conclusao"]);
+$fanofinal = ($_POST["anofinal"]);
+$fqualificacoes = ($_POST["qualificacoes"]);
+$fobjetivos = ($_POST["objetivos"]);
+$fempresa = ($_POST["empresa"]);
+$ffuncao = ($_POST["funcao"]);
+$fdataentrada = ($_POST["dataentrada"]);
+$fdatasaida = ($_POST["datasaida"]);
+$fatividades = ($_POST["atividades"]);
+$fcurso = ($_POST["curso"]);
 
 /* Preparação do documento final
  */
@@ -112,5 +112,13 @@ $documentTemplate = '<!doctype html>
 
 
 $dompdf->loadHtml($documentTemplate);
-echo $documentTemplate
+
+// (Optional) Setup the paper size and orientation
+$dompdf->setPaper('A4', '');
+
+// Render the HTML as PDF
+$dompdf->render();
+
+// Output the generated PDF to Browser
+$dompdf->stream("MeuCurriculo.pdf");
 ?>
