@@ -58,9 +58,31 @@
 
 
 
-	<form name="form" action="gerador.php" method="get" id="aparecer" style="display: none">
+	<form name="form" action="gerador.php" method="post" id="aparecer" style="display: none">
 
 		<div id="">
+            <div class="py-4 text-center align-items-center">	
+				<div class="container">
+					<h4>introdução
+					</h4>
+					<div class="popup" onclick="myPopup4()">
+						<strong style="font-size: 25px"> + </strong>
+						<span class="popuptext" id="myPopup4">
+							<small>Digite no campo abaixo os seus objetivos pessoais, acadêmicos e/ou profissionais. É indicado que se utilize somente um texto, porém você pode dividí-lo em parágrafos
+							</small>
+						</span>
+					</div>
+				</div>
+                
+                <div class="container">
+                <div class="col-md-14 mb-5">
+                    <hr>
+                    <label for="text-center">Seus Objetivos</label>
+				<textarea name="objetivos" class="form-control" rows="3" id="objetivos" required></textarea>
+			 </div>
+              </div>      
+            </div>
+                
 			<div class="py-4 text-center align-items-center">	
 				<div class="container">
 					<h4>dados pessoais
@@ -81,7 +103,7 @@
 					<!-- PRIMEIRA LINHA -->		
 					<div class="col-md-14 mb-3">					
 						<label for="text-center">Nome completo</label>
-						<input name="nome" id="nome" type="text" class="form-control"  placeholder="Joãozinho da Silva">
+						<input name="nome" id="nome" type="text" class="form-control"  placeholder="Joãozinho da Silva" required>
 					</div>
 
 
@@ -92,7 +114,7 @@
 							<div class="input-group-prepend">
 								<span class="input-group-text">@</span>
 							</div>		
-							<input name="email" id="email" type="text" class="form-control" placeholder="meuemail@aquelelá.com">
+							<input name="email" id="email" type="text" class="form-control" placeholder="meuemail@aquelelá.com" required>
 						</div>
 					</div>
 
@@ -107,14 +129,14 @@
 								<div class="input-group-prepend">
 									<span class="input-group-text">✆</span>
 								</div>
-								<input id="telefone" name="telefone" type="text" class="form-control" placeholder="(46) 99943-2232">
+								<input id="telefone" name="telefone" type="text" class="form-control" placeholder="(46) 99943-2232" required>
 							</div>
 						</div>
 
 						<!-- SEGUNDO BLOCO -->	
 						<div class="col-md-3 mb-3">
 							<label>Sexo ♂</label>
-							<select id="sexo" name="sexo" class="custom-select d-block w-100">
+							<select id="sexo" name="sexo" class="custom-select d-block w-100" required>
 								<option value="">
 								Escolha...</option>
 								<option>Masculino</option>
@@ -125,13 +147,13 @@
 						<!-- TERCEIRO BLOCO -->	
 						<div class="col-md-3 mb-3">
 							<label for="estado_civil">Estado civil</label>
-							<input id="estado_civil" name="estado_civil" type="text" class="form-control" placeholder="Casado">
+							<input id="estado_civil" name="estado_civil" type="text" class="form-control" placeholder="Casado" required>
 						</div>
 
 						<!-- QUARTO BLOCO -->					
 						<div class="col-md-3 mb-3">					
 							<label for="text-center">Data de Nascimento</label>
-							<input id="nascimento" name="nascimento" type="text" class="form-control" placeholder="03/03/2018">
+							<input id="nascimento" name="nascimento" type="text" class="form-control" placeholder="03/03/2018" required>
 						</div>
 
 					</div>	
@@ -144,7 +166,7 @@
 						<!-- PRIMEIRO BLOCO -->
 						<div class="col-md-4 mb-3">
 							<label for="estado">Estado</label>
-							<select id="estado" name="estado" class="custom-select d-block w-100">
+							<select id="estado" name="estado" class="custom-select d-block w-100" required>
 								<option value="">Escolha...</option>
 								<option>Acre</option>; <option>Alagoas</option>; <option>Amapá</option>; <option>Amazonas</option>; <option>Bahia</option>;
 								<option>Ceará</option>;  <option>Distrito Federal</option>;  <option>Espírito Santo</option>;  <option>Goiás</option>;
@@ -158,19 +180,19 @@
 						<!-- SEGUNDO BLOCO -->
 						<div class="col-md-5 mb-3">
 							<label for="endereco">Cidade</label>
-							<input id="cidade" name="cidade" type="text" class="form-control" placeholder="Francisco Beltrão">
+							<input id="cidade" name="cidade" type="text" class="form-control" placeholder="Francisco Beltrão" required>
 						</div>
 
 						<!-- TERCEIRO BLOCO -->
 						<div class="col-md-3 mb-3">
 							<label for="cep">CEP</label>
-							<input id="cep" name="cep" type="text" class="form-control" placeholder="856010-63">
+							<input id="cep" name="cep" type="text" class="form-control" placeholder="856010-63" required>
 						</div>
 
 						<!-- QUARTO BLOCO -->
 						<div class="col-md-12 mb-5">
 							<label for="text-center">Endereço</label>
-							<input name="endereco" type="text" class="form-control" id="endereco" placeholder="Rua Canarinhos, nº2084">
+							<input name="endereco" type="text" class="form-control" id="endereco" placeholder="Rua Canarinhos, nº2084" required>
 						</div>
 
 
@@ -195,13 +217,13 @@
 				<!-- PRIMEIRO BLOCO -->
 				<div class="col-md-6 mb-3">	
 					<label for="text-center">Curso</label>
-					<input name="cursos" type="text" class="form-control" id="cursos" placeholder="Ensino médio completo / Administração">
+					<input name="curso" type="text" class="form-control" id="curso" placeholder="Ensino médio completo / Administração" required>
 				</div>
 
 				<!-- SEGUNDO BLOCO -->			
 				<div class="col-md-6 mb-3">
 					<label>Instituição</label>
-					<input name="instituicao" type="text" class="form-control" id="instituicao" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade">
+					<input name="instituicao" type="text" class="form-control" id="instituicao" placeholder="Universidade Paranaense / Colégio Estudal Mário de Andrade" required>
 				</div>
 
 			</div>
@@ -213,13 +235,13 @@
 				<!-- PRIMEIRO BLOCO -->
 				<div class="col-md-4 mb-3">	
 					<label for="text-center">Ano Inicial</label>
-					<input name="anoinicial" type="text" class="form-control" id="anoinicial" placeholder="08/07/2012">
+					<input name="anoinicial" type="text" class="form-control" id="anoinicial" placeholder="08/07/2012" required>
 				</div>
 
 				<!-- SEGUNDO BLOCO -->
 				<div class="col-md-4 mb-3">
 					<label for="cep">Conclusão</label>
-					<select name="conclusao" class="custom-select d-block w-100" id="conclusao">
+					<select name="conclusao" class="custom-select d-block w-100" id="conclusao" required>
 						<option value="">Escolha...</option>
 						<option>Concluído em:</option>
 						<option>Será concluído em:</option>
@@ -229,7 +251,7 @@
 				<!-- SEGUNDO BLOCO -->					
 				<div class="col-md-4 mb-3">
 					<label for="endereco">Ano Final</label>
-					<input name="anofinal" type="text" class="form-control" id="anofinal">
+					<input name="anofinal" type="text" class="form-control" id="anofinal" required>
 				</div>
 
 			</div>
@@ -238,8 +260,7 @@
 			<!-- TERCEIRA LINHA -->	
 			<div class="col-md-14 mb-5">
 				<label for="endereco">Qualificações</label>
-				<textarea name="qualificacoes" class="form-control" rows="3" id="qualificacoes" placeholder="- Curso completo de inglês na empresa SpeakEnglish 
-				- Curso de violão completo"></textarea>
+				<textarea name="qualificacoes" class="form-control" rows="3" id="qualificacoes" placeholder="- Curso completo de inglês na empresa SpeakEnglish" required></textarea>
 			</div>
 		</div>
 
@@ -248,7 +269,7 @@
 			<div class="container">
 				<h4>experiência profissional </h4>
 				<div class="popup" onclick="myPopup3()"><strong style="font-size: 25px"> + </strong><span class="popuptext" id="myPopup3"> <small>
-				Se você já possui experiência de trabalho, preencha os campos abaixo e dê um "up" no seu currículo</small>
+				Preencha os campos abaixo e dê um "up" no seu currículo</small>
 			</span>
 		</div>
 
@@ -258,7 +279,7 @@
 		<!-- PRIMEIRA LINHA -->
 		<div class="col-md-14 mb-3">
 			<label for="text-center">Empresa</label>
-			<input name="empresa" type="text" class="form-control" id="empresa" placeholder="Google">
+			<input name="empresa" type="text" class="form-control" id="empresa" placeholder="Google" required>
 		</div>
 
 		<!-- INÍCIO SEGUNDA LINHA -->
@@ -266,20 +287,20 @@
 
 			<!-- PRIMEIRO BLOCO -->						
 			<div class="col-md-6 mb-3">
-				<label for="Funcao">Função</label>
-				<input name="funcao" type="text" class="form-control" id="funcao" placeholder="Limpeza de sofás">
+				<label for="funcao">Função</label>
+				<input name="funcao" type="text" class="form-control" id="funcao" placeholder="Limpeza de sofás" required>
 			</div>
 
 			<!-- SEGUNDO BLOCO -->	
 			<div class="col-md-3 mb-3">
 				<label for="endereco">Data de entrada</label>
-				<input name="dataentrada" type="text" class="form-control" id="dataentrada" placeholder="01/08/2017">
+				<input name="dataentrada" type="text" class="form-control" id="dataentrada" placeholder="01/08/2017" required>
 			</div>
 
 			<!-- TERCEIRO BLOCO -->
 			<div class="col-md-3 mb-3">
 				<label for="endereco">Data de saída</label>
-				<input name="datasaida" type="text" class="form-control" id="datasaida" placeholder="03/05/2017">
+				<input name="datasaida" type="text" class="form-control" id="datasaida" placeholder="03/05/2017" required>
 			</div>
 
 		</div>
@@ -288,9 +309,9 @@
 		<!-- TERCEIRA LINHA -->
 		<div class="col-md-14 mb-5">
 			<label for="endereco">Atividades desempenhadas</label>
-			<textarea id="atividades" name="atividades" class="form-control" rows="3" placeholder="Limpava todas as espécies de sofá" ></textarea>
+			<textarea id="atividades" name="atividades" class="form-control" rows="3" placeholder="Limpava todas as espécies de sofá"  required></textarea>
 		</div>
-		<input type="submit" name="enviar" value="Clique aqui para gerar o PDF"/>
+                <button type="submit" name="enviar" style="border: 0; background: transparent;"><img src="img/icons8-baixar-atualizações-80.png"></button>
 	</form>
 
 </div>
@@ -346,6 +367,10 @@ these js files are used for making PDF
 	}
 	function myPopup3() {
 		var popup = document.getElementById("myPopup3");
+		popup.classList.toggle("show");
+	}
+    function myPopup4() {
+		var popup = document.getElementById("myPopup4");
 		popup.classList.toggle("show");
 	}
 </script>
